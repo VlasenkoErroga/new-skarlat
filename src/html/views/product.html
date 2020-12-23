@@ -1,0 +1,43 @@
+<% var data = {
+  title: "No named | Product page",
+  author: "Vlasenko$"
+}; %>
+    <%= _.template(require('./../includes/_head.html').default)(data) %>
+    
+    <body>
+      <%= _.template(require('./../includes/_header.html').default)(data) %>
+
+        <!-- Main -->
+
+        <main>
+          <%= _.template(require('./../includes/_breadcrumbs.html').default)(data) %>
+          <div class="product-content-block">
+            <div class="container">
+              <div class="row">
+                <div class="col-12 col-lg-6">
+                <%= _.template(require('./../includes/_product-slider.html').default)(data) %>
+              </div>
+              <div class="col-12 col-lg-6">
+                <%= _.template(require('./../includes/_product-info.html').default)(data) %>
+              </div>
+              <div class="col-12 col-lg-6 order-1 order-xl-0">
+                <%= _.template(require('./../includes/_product-special.html').default)(data) %>
+              </div>
+              <div class="col-12 col-lg-6">
+                <%= _.template(require('./../includes/_product-properties.html').default)(data) %>
+              </div>
+              </div>
+            </div>
+          </div>
+        </main>
+
+
+            <!-- Main end -->
+
+            <%= _.template(require('./../includes/_footer.html').default)(data) %>
+            <%= _.template(require('./../includes/_copyright.html').default)(data) %>
+
+            <script src="js/bundle.js"></script>
+
+        </body>
+    </html>

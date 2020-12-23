@@ -1,0 +1,284 @@
+
+.menu {
+    &-wrapper {
+        position: fixed;
+        left: 0;
+        padding-top: 0;
+        top: 0;
+        
+        background: $white;
+        z-index: -1;
+        height: 0;
+        width: 100%;
+        transition: all 0.6s $cubic;
+        overflow: hidden;
+        user-select: none;
+        -webkit-tap-highlight-color: transparent;
+
+           
+
+        &.show {
+            margin-top: 90px;
+            transition: all 0.6s $cubic;
+            @media(max-width: 767px){
+                margin-top: 70px;
+             }
+
+
+            @media(max-width: 992px) {
+                height: 100%;
+
+                .menu-list{
+                    transform: scale(1) translateY(0px);
+                    opacity: 1;
+                    @for $i from 1 through $menuItems {
+                        &:nth-child(#{$i}) {
+                            transition-delay: ($i - 1)/10+s;
+                        }
+                    }
+                }
+            }
+
+        }
+
+        &.hide{
+            & > *{
+                transition:  all .2s ease;
+                height: 0;
+            }
+        }
+
+        &::after{
+            content: '';
+            width: 100%;
+            height: 1px;
+            background: $lightgrey;
+            position: absolute;
+            top: 60px;
+
+        }
+
+       
+
+
+    }
+
+    &-nav {
+        padding: 0 50px;
+        width: 100%;
+        position: relative;
+    }
+
+    &-list {
+        list-style: none;
+        width: 100%;
+        margin: 0;
+        padding: 0 ;
+        flex-direction: column;
+        height: auto;
+        transition: all 0.4s ease-in-out;
+        transform: scale(1.15) translateY(-30px);
+        opacity: 0;
+        transition: transform 0.5s $cubic, opacity 0.6s $cubic;
+        @for $i from 1 through $menuItems {
+            &:nth-child(#{$i}) {
+                transition-delay: #{0.56 - ($i * 0.07)}s;
+            }
+        }
+
+    }
+
+    &-item {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        border-bottom: 1px solid rgba(0,0,0, .1);
+        position: relative;
+        transition: all 0.4s ease-in-out;
+        background: $white;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+
+        &-category {
+            @extend .menu-item;
+
+            & .menu {
+                &-link {
+                    transition: all 0.4s ease-in-out;
+                }
+            }
+
+            &:after {
+                opacity: 1;
+                transition: all 0.4s ease-in-out;
+            }
+
+            &:before {
+                content: "";
+                display: flex;
+                position: absolute;
+                left: 15px;
+                top: 0;
+                width: 14px;
+                height: 100%;
+                background: url("./../img/icon/arrow.svg") 50% no-repeat;
+                background-size: 85%;
+                max-height: 52px;
+                z-index: 3;
+                opacity: 0;
+                transform: scale(-1, -1);
+                transition: all 0.4s ease-in-out;
+            }
+
+            &.active {
+
+                
+                & .menu {
+                    &-link {
+                        background: $white;
+                        padding-left: 45%;
+                        transition: all 0.4s ease-in-out;
+                        color:grey;
+                    }
+                }
+
+                &:after {
+                    opacity: 0;
+                    transition: all 0.4s ease-in-out;
+                }
+                &:before {
+                    content: "";
+                    display: flex;
+                    position: absolute;
+                    left: 15px;
+                    top: 0;
+                    width: 14px;
+                    height: 100%;
+                    background: url("./../img/icon/arrow.svg") 50% no-repeat;
+                    background-size: 85%;
+                    max-height: 52px;
+                    z-index: 3;
+                    opacity: 1;
+                    transition: all 0.4s ease-in-out;
+                }
+
+            }
+        }
+
+        &.arrow{
+            &:after {
+                content: '';
+                display: flex;
+                position: absolute;
+                right: 15px;
+                top: 0;
+                width: 14px;
+                height: 100%;
+                max-height: 52px;
+                background: url("./../img/icon/arrow.svg") center center no-repeat;
+                background-size: 85%;
+                transition: all 0.3s ease-in-out;
+                z-index: 2;
+            }
+        }
+
+        &.active {
+            &.arrow{
+                &:after  {
+                transform: rotate(90deg);
+                transition: all 0.4s ease-in-out;
+            }
+        }
+
+            & .menu-item {
+                & .menu-link {
+                   // background: $lightgrey;
+                   // text-transform: capitalize;
+                    padding-left: 40px;
+                }
+
+                &.active {
+                    & .menu-link {
+                       // background: lightblue;
+                        //text-transform: capitalize;
+                    }
+                }
+            }
+        }
+
+        &.red{
+            color: $red;
+        }
+
+        &:last-child{
+            border-bottom: none;
+        }
+    }
+
+    &-link {
+        display: flex;
+        padding: 15px 0;
+        width: 100%;
+        z-index: 2;
+        background: $white;
+        cursor: pointer;
+        justify-content: flex-start;
+        //text-transform: uppercase;
+
+        @media(max-width:575px){
+            padding: 15px 0;
+            font-size: 14px;
+            font-weight: 400;
+        }
+    }
+
+    &-collapse {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+        background: #eee;
+    }
+
+    &-category {
+        position: absolute;
+        left: -100%;
+        top: 110px;
+        width: 100%;
+        z-index: 2;
+        transition: all 0.3s ease-in-out;
+        background: $white;
+        overflow: auto;
+        max-height: calc(100vh - 200px);
+        padding: 0 50px;
+        &.active {
+            left: 0;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .menu {
+            &-list {
+                @extend .menu-list;
+            }
+            &-item {
+                @extend .menu-item;
+
+                &.active {
+                    & .menu {
+                        &-item {
+
+                            & .menu-link {
+                                 padding-left: 10px;
+                            }
+
+                        }
+                    }
+                }
+            }
+            &-link {
+                @extend .menu-link;
+
+            }
+        }
+    }
+}

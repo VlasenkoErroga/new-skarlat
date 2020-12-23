@@ -1,0 +1,61 @@
+<div class="order-block-head-wrap">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="order-block-head">
+                    <h2>Выберите свой вариант авторизации</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+             <div class="order-block-body">
+                 <div class="row">
+                     <div class="col-12 col-md-6 d-flex justify-content-start">
+                         <form class="order-form-auth" onsubmit="return false">
+                             <h2>Авторизоваться</h2>
+                             <div class="form-group">
+                                <label for="email-user">Введите e-mail</label>
+                                <input id="email-user" type="text" name="email" required autocomplete="email">
+                             </div>
+                             <div class="form-group">
+                                <label for="pass-user">Введите пароль</label>
+                                <input id="pass-user" type="password" name="password" required autocomplete="current-password">
+                             </div>
+
+                             <small>Ваш E-mail не будет передан 3-м лицам</small>
+                             
+                             <button type="submit" class="primary send-form" data-send-auth="true">Войти в аккаунт</button>
+                             <a href="javascript:void(0)" >Зарегистрироваться.</a>
+                             <a href="javascript:void(0)" >Востановить пароль.</a>
+                            </form>
+                     </div>
+                     <div class="col-12 col-md-6 d-flex justify-content-end">
+                        <form class="order-form-callback" onsubmit="return false">
+                            <h2>Продолжить как гость</h2>
+                            <small>Вы можете авторизоваться позже, а сейчас оставить свои контактный номер телефона для оформления заказа.</small>
+                            <div class="form-group">
+                               <label for="name-user">Введите имя</label>
+                               <input id="name-user" type="text" name="name" required autocomplete="name">
+                            </div>
+                            <div class="form-group">
+                               <label for="phone-user">Введите номер телефона</label>
+                               <input id="phone-user" name="phone" required autocomplete="phone"  type="text"  placeholder="+38 (0__) ___-__-__" data-mask="+38 (0__) ___-__-__">
+                            </div>                            
+                            <button type="submit" class="primary send-form" data-send-callback="true">Отправить</button>
+                        </form>
+                    </div>
+                 </div>
+            </div> 
+            
+            <div class="order-block-footer">
+
+              
+            </div>
+        </div>
+    </div>
+</div>

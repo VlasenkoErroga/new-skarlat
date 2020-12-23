@@ -1,0 +1,56 @@
+.theme{
+    &-shadow{
+
+        & .header-content{
+            background: $black;
+        }
+
+        & .header-tab__wrapper.show{
+            z-index: -1;
+        }
+
+        & .header-logo__path-1, .header-logo__path-3{
+            fill: $white;
+        }
+
+        & .header-lang:first-child:after {
+            background: $white;
+        }
+
+        & .header-search__label{
+            color: $black;
+        }
+        & .header-list__item{
+        color: $white;
+
+            & svg{
+                fill: $white;
+            }
+
+            & #header-search-reset{
+                svg{
+                    fill:$black;
+                }
+            }
+
+            
+        }
+
+        & .marker{
+  
+            background: $white;
+          
+
+            
+            & span{
+                color:$black;
+
+            }
+        }
+    }
+    &-light{
+        color: $black;
+    }
+
+    
+}

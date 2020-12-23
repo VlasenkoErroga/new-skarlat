@@ -1,0 +1,98 @@
+button {
+    padding: 2px;
+    background: none;
+    border: none;
+    letter-spacing: 1px;
+
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size:20px;
+   
+
+    & svg {
+        fill: $black;
+        width: 20px;
+        height: 20px;
+    }
+
+    &.more-filters {
+        border: 1px solid $lightgrey;
+        background: $white;
+        color: $black;
+        width: 100%;
+        padding: 8px 35px 8px 16px;
+        display: flex;
+        justify-self: flex-start;
+        position: relative;
+        &::before {
+            content: "";
+            width: 1px;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            right: 35px;
+            background: #f3f3f3;
+        }
+
+        &::after {
+            position: absolute;
+            content: "";
+            top: 14px;
+            right: 8px;
+            width: 0;
+            height: 0;
+            border: 6px solid transparent;
+            border-left-color: #000;
+            transition: all .3s ease-in-out;
+          }
+    }
+
+    &.primary {
+        background-color: $black;
+        border: 2px solid $black;
+        text-transform: uppercase;
+        color: $white;
+        font-weight: 400;
+        padding: 10px 16px;
+        display: flex;
+        justify-content: center;
+        transition: all .3s ease-in-out;
+        margin-bottom: 10px;
+
+
+        &:hover{
+            transition: all .3s ease-in-out;
+            background-color: $lightgrey;
+            border: 2px solid $lightgrey;
+
+            color: $black;
+        }
+
+        &:disabled{
+            pointer-events: none;
+        }
+    }
+
+    &.outline {
+        font-size: 16px;
+        font-weight: 400;
+        background-color: $white;
+        border: 2px solid $black;
+        text-transform: uppercase;
+        color: $black;
+        padding: 10px 16px;
+        display: flex;
+        justify-content: center;
+        transition: all .3s ease-in-out;
+        margin-bottom: 10px;
+        
+
+
+        &:hover{
+            transition: all .3s ease-in-out;
+            background-color: $black;
+            color: $white;
+        }
+    }
+
+}

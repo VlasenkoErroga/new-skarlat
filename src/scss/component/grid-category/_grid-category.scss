@@ -1,0 +1,24 @@
+.category {
+    background: $lightgrey;
+
+    & [class*="col-"] {
+        padding: 5px;
+    }
+
+    &-item {
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        &__img {
+            width: 100%;
+            max-height: 300px;
+        }
+
+        &__title {
+            display: flex;
+            padding: 5px 0 10px 0;
+            text-transform: uppercase;
+            width: 100%;
+        }
+    }
+}

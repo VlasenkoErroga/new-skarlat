@@ -1,0 +1,26 @@
+<% var data = {
+    title: "No named | Order page",
+    author: "Vlasenko$"
+  }; %>
+      <%= _.template(require('./../includes/_head.html').default)(data) %>
+      
+      <body>
+        <%= _.template(require('./../includes/_header.html').default)(data) %>
+  
+          <!-- Main -->
+  
+          <main>
+            <%= _.template(require('./../includes/_breadcrumbs.html').default)(data) %>
+            <%= _.template(require('./../includes/_order-page.html').default)(data) %>            
+          </main>
+  
+  
+              <!-- Main end -->
+  
+              <%= _.template(require('./../includes/_footer.html').default)(data) %>
+              <%= _.template(require('./../includes/_copyright.html').default)(data) %>
+  
+              <script src="js/bundle.js"></script>
+  
+          </body>
+      </html>

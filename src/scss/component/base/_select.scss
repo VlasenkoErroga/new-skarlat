@@ -1,0 +1,84 @@
+.select {
+  position: relative;
+  border: 1px solid $lightgrey;
+  border-radius: 2px;
+
+  &:before{
+    content:'';
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    right: 35px;
+    background: $lightgrey;
+  }
+}
+
+.select select {
+  display: none; 
+}
+
+.select-selected {
+  background-color: $white;
+}
+
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 16px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: $black transparent transparent transparent;
+  transition: all .3s ease-in-out;
+}
+
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent $black transparent;
+  top: 9px;
+}
+
+.select-selected {
+  color: $black;
+  padding: 8px 35px 8px 16px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+}
+
+.select-items {
+  position: absolute;
+  background-color: $white;
+  text-transform: capitalize;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  border: 1px solid $lightgrey;
+  overflow: auto;
+  max-height: 200px;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+
+
+  & div{
+    color: $black;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+
+  &:last-child{
+    border: none;
+  }
+  }
+}
+
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}

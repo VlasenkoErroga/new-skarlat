@@ -1,0 +1,45 @@
+.breadcrumb {
+    padding: 5px 0;
+    list-style: none;
+    margin: 0;
+
+  &-block{
+    border-bottom:1px solid $lightgrey;
+  }
+
+   & li {
+    display: inline;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+
+    @media(max-width: 991px){
+      font-size: 10px;
+    }
+    
+    & + li{
+      &:before {
+        padding: 8px;
+        color: $black;
+        content: "\2022";
+      }
+    }
+    
+    & a {
+      letter-spacing: 1px;
+      color: $black;
+      text-decoration: none;
+      font-size: 12px;
+
+      @media(max-width: 991px){
+        font-size: 10px;
+      }
+
+      &:hover {
+        color: $black;
+        text-decoration: underline;
+      }
+    }
+  }
+}

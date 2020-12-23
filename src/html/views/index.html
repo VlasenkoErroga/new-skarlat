@@ -1,0 +1,30 @@
+<% var data = {
+  title: "No named | Main page",
+  author: "Vlasenko$"
+}; %>
+    <%= _.template(require('./../includes/_head.html').default)(data) %>
+    
+    <body>
+      <%= _.template(require('./../includes/_header.html').default)(data) %>
+
+        <!-- Main -->
+
+        <main>
+          <%= _.template(require('./../includes/_main-slider.html').default)(data) %>
+
+          <%= _.template(require('./../includes/_products-slider.html').default)(data) %>
+          <%= _.template(require('./../includes/_advantages.html').default)(data) %>
+          <%= _.template(require('./../includes/_architect.html').default)(data) %>
+          <%= _.template(require('./../includes/_seo.html').default)(data) %>         
+        </main>
+
+
+            <!-- Main end -->
+
+            <%= _.template(require('./../includes/_footer.html').default)(data) %>
+            <%= _.template(require('./../includes/_copyright.html').default)(data) %>
+
+            <script src="js/bundle.js"></script>
+
+        </body>
+    </html>

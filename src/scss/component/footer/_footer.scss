@@ -1,0 +1,104 @@
+.footer{
+    //background: $lightgrey;
+    min-height: 30vh;
+    position: relative;
+
+    &.bt{
+        &:before{
+            content: '';
+            width:calc(100% - 30px);
+            max-width: 1270px;
+            height: 1px;
+            background:$lightgrey;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 0;
+        }
+    }
+
+    &-nav{
+        &-list{
+            list-style: none;
+            margin: 0;
+            margin-bottom: 20px;
+            padding: 0 40px;
+
+            @media(max-width: 767px){
+                padding: 0 10px;        
+            }
+            @media(min-width: 768px) and(max-width: 1200px){
+                padding: 0 20px;        
+            }
+
+
+            &.social{
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+
+                & .footer-nav__item{
+                    background: red;
+                    margin-right: 5px;
+                    border-radius: 50%;
+                    margin-bottom: 0;
+                    overflow: hidden;
+
+                    &:last-child{
+                        margin-right:0;
+                    }
+                }
+            }
+
+            &.info{
+                & .footer-nav__item{
+                    margin-right: 20px;
+                    &:last-child{
+                        margin-right:0;
+                    }
+                }
+            }
+        }
+
+        &__item{
+            margin-bottom: 10px;
+            
+            & a{
+                width: 100%;
+                height: 100%;
+                display: flex;
+            }
+        }
+
+        &__link{
+            transition: all .3s ease-in-out;
+            color: $black;
+
+            &:hover{
+                transition: all .3s ease-in-out;
+                color: $lightgreen;
+            }
+        }
+
+        &__title{
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+    }
+
+    &-logo{
+        max-width: 200px;
+        margin-bottom: 40px;
+
+        @media(min-width:768px)and(max-width:1200px){
+            max-width: 170px;
+        }
+
+        @media(min-width:575px)and(max-width:991px){
+            max-width: 150px;
+        }
+        @media(max-width:574px){
+            max-width: 120px;
+        }
+    }
+}

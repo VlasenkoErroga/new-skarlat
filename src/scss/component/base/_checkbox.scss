@@ -1,0 +1,31 @@
+.checkbox{
+    width: 20px;
+    height: 20px;
+    max-height: 20px;
+  min-height: 20px;
+    border-radius: 50%;
+    border: 1px solid $black;
+    appearance: none;
+    -webkit-appearance: none;
+    padding: 2px;
+    position: relative;
+    margin-bottom: -1px;
+    cursor: pointer;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        padding: 7px;
+        border-radius: 50%;
+    }
+
+    &:checked::before {
+        background: $black;
+    }
+
+    &:disabled {
+        border-color: #d8d8d8;
+    }
+}
