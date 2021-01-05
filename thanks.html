@@ -49,7 +49,7 @@
                     <label class="header-search__label" for="header-search">Поиск:</label>
                     <input type="text" class="header-search" id="header-search" />
                     <div class="header-search__form-btn">
-                      <button class="header-btn" id="" data-open="true" type="submit">
+                      <button class="header-btn" id="" type="submit">
                         <svg width="20" height="20" viewBox="0 0 20 20">
                           <path
                             d="M19.8105 18.9119L14.6468 13.8308C15.999 12.3616 16.8298 10.4187 16.8298 8.28068C16.8292 3.7071 13.0621 0 8.41471 0C3.76737 0 0.000244141 3.7071 0.000244141 8.28068C0.000244141 12.8543 3.76737 16.5614 8.41471 16.5614C10.4227 16.5614 12.2644 15.8668 13.711 14.7122L18.8947 19.8134C19.1472 20.0622 19.5573 20.0622 19.8099 19.8134C20.0631 19.5646 20.0631 19.1607 19.8105 18.9119ZM8.41471 15.2873C4.48256 15.2873 1.29493 12.1504 1.29493 8.28068C1.29493 4.41101 4.48256 1.27403 8.41471 1.27403C12.3469 1.27403 15.5345 4.41101 15.5345 8.28068C15.5345 12.1504 12.3469 15.2873 8.41471 15.2873Z"
@@ -67,11 +67,11 @@
                   </form>
                   <nav class="header-nav show" id="header-nav-info">
                     <ul class="header-list tab">
-                      <li class="header-list__item" data-open="true" data-tab="category">Категории</li>
-                      <li class="header-list__item">Информация</li>
-                      <li class="header-list__item" data-open="false">Кто мы</li>
-                      <li class="header-list__item" data-open="false">Помощь</li>
-                      <li class="header-list__item" data-open="false">
+                      <li class="header-list__item" data-tab="category">Категории</li>
+                      <li class="header-list__item" data-tab="info">Информация</li>
+                      <li class="header-list__item">Кто мы</li>
+                      <li class="header-list__item" data-tab="help">Помощь</li>
+                      <li class="header-list__item">
                         <a class="header-lang active" href="/ru">Ru</a>
                         <a class="header-lang " href="/ua">Ua</a>
                       </li>
@@ -244,28 +244,104 @@
                     <span class="header-tab-content__title">Детские светильники</span>
                   </a>
                 </li>
+              </ul>
+              <ul class="header-tab-content__list hide" data-tab="info">
                 <li class="header-tab-content__item">
                   <a href="#" class="header-tab-content__link">
-                    <div class="header-tab-content__img" style="background-image:url('./img/category/8.jpg');"></div>
-                    <span class="header-tab-content__title">Настольные лампы</span>
+                    <div class="header-tab-content__img" style="background-image:url('./img/category/1.jpg');"></div>
+                    <span class="header-tab-content__title">Premium</span>
                   </a>
                 </li>
                 <li class="header-tab-content__item">
                   <a href="#" class="header-tab-content__link">
-                    <div class="header-tab-content__img" style="background-image:url('./img/category/9.jpg');"></div>
-                    <span class="header-tab-content__title">Торшеры</span>
+                    <div class="header-tab-content__img" style="background-image:url('./img/category/2.jpg');"></div>
+                    <span class="header-tab-content__title">LED - светильники</span>
                   </a>
                 </li>
                 <li class="header-tab-content__item">
                   <a href="#" class="header-tab-content__link">
-                    <div class="header-tab-content__img" style="background-image:url('./img/category/10.jpg');"></div>
-                    <span class="header-tab-content__title">Комплектующие</span>
+                    <div class="header-tab-content__img" style="background-image:url('./img/category/3.jpg');"></div>
+                    <span class="header-tab-content__title">Трековые системы</span>
                   </a>
                 </li>
                 <li class="header-tab-content__item">
                   <a href="#" class="header-tab-content__link">
-                    <div class="header-tab-content__img" style="background-image:url('./img/category/11.jpg');"></div>
-                    <span class="header-tab-content__title">Наборы DIY</span>
+                    <div class="header-tab-content__img" style="background-image:url('./img/category/4.jpg');"></div>
+                    <span class="header-tab-content__title">LOFT</span>
+                  </a>
+                </li>
+                <li class="header-tab-content__item">
+                  <a href="#" class="header-tab-content__link">
+                    <div class="header-tab-content__img" style="background-image:url('./img/category/5.jpg');"></div>
+                    <span class="header-tab-content__title">Умные светильники</span>
+                  </a>
+                </li>
+                <li class="header-tab-content__item">
+                  <a href="#" class="header-tab-content__link">
+                    <div class="header-tab-content__img" style="background-image:url('./img/category/6.jpg');"></div>
+                    <span class="header-tab-content__title">Светильники для ванной</span>
+                  </a>
+                </li>
+                <li class="header-tab-content__item">
+                  <a href="#" class="header-tab-content__link">
+                    <div class="header-tab-content__img" style="background-image:url('./img/category/7.jpg');"></div>
+                    <span class="header-tab-content__title">Уличные светильники</span>
+                  </a>
+                </li>
+                <li class="header-tab-content__item">
+                  <a href="#" class="header-tab-content__link">
+                    <div class="header-tab-content__img" style="background-image:url('./img/category/12.jpg');"></div>
+                    <span class="header-tab-content__title">Детские светильники</span>
+                  </a>
+                </li>
+              </ul>
+              <ul class="header-tab-content__list hide" data-tab="help">
+                <li class="header-tab-content__item">
+                  <a href="#" class="header-tab-content__link">
+                    <div class="header-tab-content__img" style="background-image:url('./img/category/1.jpg');"></div>
+                    <span class="header-tab-content__title">Premium</span>
+                  </a>
+                </li>
+                <li class="header-tab-content__item">
+                  <a href="#" class="header-tab-content__link">
+                    <div class="header-tab-content__img" style="background-image:url('./img/category/2.jpg');"></div>
+                    <span class="header-tab-content__title">LED - светильники</span>
+                  </a>
+                </li>
+                <li class="header-tab-content__item">
+                  <a href="#" class="header-tab-content__link">
+                    <div class="header-tab-content__img" style="background-image:url('./img/category/3.jpg');"></div>
+                    <span class="header-tab-content__title">Трековые системы</span>
+                  </a>
+                </li>
+                <li class="header-tab-content__item">
+                  <a href="#" class="header-tab-content__link">
+                    <div class="header-tab-content__img" style="background-image:url('./img/category/4.jpg');"></div>
+                    <span class="header-tab-content__title">LOFT</span>
+                  </a>
+                </li>
+                <li class="header-tab-content__item">
+                  <a href="#" class="header-tab-content__link">
+                    <div class="header-tab-content__img" style="background-image:url('./img/category/5.jpg');"></div>
+                    <span class="header-tab-content__title">Умные светильники</span>
+                  </a>
+                </li>
+                <li class="header-tab-content__item">
+                  <a href="#" class="header-tab-content__link">
+                    <div class="header-tab-content__img" style="background-image:url('./img/category/6.jpg');"></div>
+                    <span class="header-tab-content__title">Светильники для ванной</span>
+                  </a>
+                </li>
+                <li class="header-tab-content__item">
+                  <a href="#" class="header-tab-content__link">
+                    <div class="header-tab-content__img" style="background-image:url('./img/category/7.jpg');"></div>
+                    <span class="header-tab-content__title">Уличные светильники</span>
+                  </a>
+                </li>
+                <li class="header-tab-content__item">
+                  <a href="#" class="header-tab-content__link">
+                    <div class="header-tab-content__img" style="background-image:url('./img/category/12.jpg');"></div>
+                    <span class="header-tab-content__title">Детские светильники</span>
                   </a>
                 </li>
               </ul>
@@ -531,7 +607,7 @@
           </div>
 
           <div class="col-12 col-lg-6 d-flex justify-content-sm-end flex-column flex-sm-row">
-            <nav class="footer-nav order-2 order-md-0">
+            <nav class="footer-nav order-2 order-sm-0">
               <ul class="footer-nav-list">
                 <li class="footer-nav__item">
                   <a href="javascript:void(0)" class="footer-nav__link">
@@ -565,7 +641,7 @@
                 </li>
               </ul>
             </nav>
-            <nav class="footer-nav order-1 order-md-0">
+            <nav class="footer-nav order-1 order-sm-0">
               <ul class="footer-nav-list">
                 <li class="footer-nav__item">
                   <a href="javascript:void(0)" class="footer-nav__link">О нас</a>
