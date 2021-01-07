@@ -612,7 +612,7 @@
             <div class="col-3 d-none d-lg-flex">
               <div class="select">
                 <select>
-                  <option value="0">Категория:</option>
+                  <option value="0">Тип:</option>
                   <option value="1">Skarlat Premium</option>
                   <option value="2">Трековые системы</option>
                   <option value="3">LOFT</option>
@@ -631,7 +631,7 @@
             <div class="col-3 d-none d-lg-flex">
               <div class="select">
                 <select>
-                  <option value="0">Тип:</option>
+                  <option value="0">Стиль:</option>
                   <option value="1">Потолочный</option>
                   <option value="2">Бра</option>
                   <option value="3">Трековый</option>
@@ -645,7 +645,7 @@
             <div class="col-3 d-none d-lg-flex">
               <div class="select">
                 <select>
-                  <option value="0">Фурнитура:</option>
+                  <option value="0">Материал арматуры:</option>
                   <option value="1">Skarlat Premium</option>
                   <option value="2">Красивая</option>
                   <option value="3">Нормальная</option>
@@ -658,20 +658,7 @@
             </div>
 
             <div class="col-12 col-md-3">
-              <button class="more-filters" id="modalFilters">Фильтр</button>
-            </div>
-
-            <div class="col-12 col-md-3">
-              <div class="filters-count-product">
-                <p>Показать на стр.</p>
-                <div class="select">
-                  <select>
-                    <option value="0">16</option>
-                    <option value="1">24</option>
-                    <option value="2">48</option>
-                  </select>
-                </div>
-              </div>
+              <button class="more-filters" id="modalFilters">Все фильтры</button>
             </div>
 
             <div class="col-12 col-md-3">
@@ -686,7 +673,11 @@
             </div>
 
             <div class="col-12 col-md-3">
-              <button class="filters-reset" id="filter-reset" form="form-filter" type="reset">Сбросить фильтр</button>
+              <a href="№" download="">Скачать каталог</a>
+            </div>
+
+            <div class="col-12 col-md-3">
+              <button class="filters-reset" id="filter-reset" form="form-filter" type="reset">Очистить фильтр</button>
             </div>
 
             <div class="col-12 d-sm-none">
@@ -698,581 +689,776 @@
       </div>
       <div class="product-block">
         <div class="container">
-          <div class="row" id="change-grid">
+          <div class="row">
             <div class="col-6 col-sm-6 col-md-4 col-lg-3">
-              <div class="product">
-                <div class="product-wrapper">
-                  <div class="product-img">
-                    <div class="product-img__wrapper">
-                      <img src="./img/1.jpg" alt="product" />
-                      <div class="product-pallete__wrapper">
-                        <ul class="product-pallete">
-                          <li class="product-pallete__item">
-                            <a href="javascript:void(0)"
-                              ><img
-                                class="product-pallete__img"
-                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTQnz0FKatyzNkArItXpdqcvmSmXqrtnjnBT7WAOu0LTffd1zGy"
-                                alt="металл"
-                            /></a>
-                          </li>
-                          <li class="product-pallete__item">
-                            <a href="javascript:void(0)"
-                              ><img
-                                class="product-pallete__img"
-                                src="https://s-media-cache-ak0.pinimg.com/564x/6c/78/ef/6c78eff719cfadc92682bcd8e2adddc4.jpg"
-                                alt="дерево"
-                            /></a>
-                          </li>
-                          <li class="product-pallete__item">
-                            <a href="javascript:void(0)"
-                              ><img
-                                class="product-pallete__img"
-                                src="https://st0.isolux.ru/media/catalog/product/cache/1/image/602f0fa2c1f0d1ba5e241f914e856ff9/4/2/42_4.jpg?kar=1&kf=1&kt=1&co=1&rgb%5B0%5D=255&rgb%5B1%5D=255&rgb%5B2%5D=255&ang=ang&qua=90"
-                                alt="пластик"
-                            /></a>
-                          </li>
-                        </ul>
+              <div class="product-category-wrap">
+                <div class="product-category-img">
+                  <div class="product-category-slider">
+                    <div class="product-category-slider__wrapper">
+                      <div class="product-category-slider__item">
+                        <a class="product-category-slider__link" href="1.html">
+                          <div class="product-category-slider__img-wrap">
+                            <img class="product-category-slider__img" src="./img/1.jpg" alt="" />
+                          </div>
+                          <div class="product-category-slider__info">
+                            <p>Настенный светильник</p>
+                            <span>Skarlat RWLB111 6W</span>
+                          </div>
+                        </a>
+                      </div>
+
+                      <div class="product-category-slider__item">
+                        <a class="product-category-slider__link" href="2.html">
+                          <div class="product-category-slider__img-wrap">
+                            <img class="product-category-slider__img" src="./img/2.jpg" alt="" />
+                          </div>
+                          <div class="product-category-slider__info">
+                            <p>Настенный светильник2</p>
+                            <span>Skarlat RWLB111 6W</span>
+                          </div>
+                        </a>
+                      </div>
+
+                      <div class="product-category-slider__item">
+                        <a class="product-category-slider__link" href="3.html">
+                          <div class="product-category-slider__img-wrap">
+                            <img class="product-category-slider__img" src="./img/3.jpg" alt="" />
+                          </div>
+                          <div class="product-category-slider__info">
+                            <p>Настенный светильник3</p>
+                            <span>Skarlat RWLB111 6W</span>
+                          </div>
+                        </a>
                       </div>
                     </div>
                   </div>
-                  <div class="product-info">
-                    <span class="product-title">
-                      Skarlat DG0712-LED 36W WH 6000K
-                    </span>
-                    <div class="product-price">
-                      <div class="product-price-new">
-                        <span class="product-price-new__value">32555</span>
-                        <span class="product-price-new__currency">грн</span>
+
+                  <div class="product-category-slider-thumbs">
+                    <div class="product-category-slider-thumbs__wrapper">
+                      <div class="product-category-slider-thumbs__item">
+                        <div style="background: red"></div>
                       </div>
-                      <div class="product-price-old">
-                        <span class="product-price-old__value">32555</span>
-                        <span class="product-price-old__currency">грн</span>
+                      <div class="product-category-slider-thumbs__item">
+                        <div style="background: white"></div>
+                      </div>
+                      <div class="product-category-slider-thumbs__item">
+                        <div style="background: black"></div>
                       </div>
                     </div>
                   </div>
                 </div>
+                <div class="product-category-slider-price">
+                  <span class="product-category-slider-price__old"
+                    >5648
+                    <span class="product-category-slider-price__old-currency">грн</span>
+                  </span>
+                  <span class="product-category-slider-price__new"
+                    >4648
+                    <span class="product-category-slider-price__new-currency">грн</span>
+                  </span>
+                </div>
               </div>
             </div>
+
             <div class="col-6 col-sm-6 col-md-4 col-lg-3">
-              <div class="product">
-                <div class="product-wrapper">
-                  <div class="product-img">
-                    <div class="product-img__wrapper">
-                      <img src="./img/2.jpg" alt="product" />
-                      <div class="product-pallete__wrapper">
-                        <ul class="product-pallete">
-                          <li class="product-pallete__item">
-                            <a href="javascript:void(0)"
-                              ><img
-                                class="product-pallete__img"
-                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTQnz0FKatyzNkArItXpdqcvmSmXqrtnjnBT7WAOu0LTffd1zGy"
-                                alt="металл"
-                            /></a>
-                          </li>
-                          <li class="product-pallete__item">
-                            <a href="javascript:void(0)"
-                              ><img
-                                class="product-pallete__img"
-                                src="https://s-media-cache-ak0.pinimg.com/564x/6c/78/ef/6c78eff719cfadc92682bcd8e2adddc4.jpg"
-                                alt="дерево"
-                            /></a>
-                          </li>
-                          <li class="product-pallete__item">
-                            <a href="javascript:void(0)"
-                              ><img
-                                class="product-pallete__img"
-                                src="https://st0.isolux.ru/media/catalog/product/cache/1/image/602f0fa2c1f0d1ba5e241f914e856ff9/4/2/42_4.jpg?kar=1&kf=1&kt=1&co=1&rgb%5B0%5D=255&rgb%5B1%5D=255&rgb%5B2%5D=255&ang=ang&qua=90"
-                                alt="пластик"
-                            /></a>
-                          </li>
-                        </ul>
+              <div class="product-category-wrap">
+                <div class="product-category-img">
+                  <div class="product-category-slider">
+                    <div class="product-category-slider__wrapper">
+                      <div class="product-category-slider__item">
+                        <a class="product-category-slider__link" href="1.html">
+                          <div class="product-category-slider__img-wrap">
+                            <img class="product-category-slider__img" src="./img/1.jpg" alt="" />
+                          </div>
+                          <div class="product-category-slider__info">
+                            <p>Настенный светильник</p>
+                            <span>Skarlat RWLB111 6W</span>
+                          </div>
+                        </a>
+                      </div>
+
+                      <div class="product-category-slider__item">
+                        <a class="product-category-slider__link" href="2.html">
+                          <div class="product-category-slider__img-wrap">
+                            <img class="product-category-slider__img" src="./img/2.jpg" alt="" />
+                          </div>
+                          <div class="product-category-slider__info">
+                            <p>Настенный светильник2</p>
+                            <span>Skarlat RWLB111 6W</span>
+                          </div>
+                        </a>
+                      </div>
+
+                      <div class="product-category-slider__item">
+                        <a class="product-category-slider__link" href="3.html">
+                          <div class="product-category-slider__img-wrap">
+                            <img class="product-category-slider__img" src="./img/3.jpg" alt="" />
+                          </div>
+                          <div class="product-category-slider__info">
+                            <p>Настенный светильник3</p>
+                            <span>Skarlat RWLB111 6W</span>
+                          </div>
+                        </a>
                       </div>
                     </div>
                   </div>
-                  <div class="product-info">
-                    <span class="product-title">
-                      Skarlat DG0712-LED 36W WH 6000K
-                    </span>
-                    <div class="product-price">
-                      <div class="product-price__new">
-                        <span class="product-price__value">32555</span>
-                        <span class="product-price__currency">грн</span>
+
+                  <div class="product-category-slider-thumbs">
+                    <div class="product-category-slider-thumbs__wrapper">
+                      <div class="product-category-slider-thumbs__item">
+                        <div style="background: red"></div>
                       </div>
-                      <div class="product-price__old">
-                        <span class="product-price__value">32555</span>
-                        <span class="product-price__currency">грн</span>
+                      <div class="product-category-slider-thumbs__item">
+                        <div style="background: white"></div>
+                      </div>
+                      <div class="product-category-slider-thumbs__item">
+                        <div style="background: black"></div>
                       </div>
                     </div>
                   </div>
                 </div>
+                <div class="product-category-slider-price">
+                  <span class="product-category-slider-price__old"
+                    >5648
+                    <span class="product-category-slider-price__old-currency">грн</span>
+                  </span>
+                  <span class="product-category-slider-price__new"
+                    >4648
+                    <span class="product-category-slider-price__new-currency">грн</span>
+                  </span>
+                </div>
               </div>
             </div>
+
             <div class="col-6 col-sm-6 col-md-4 col-lg-3">
-              <div class="product">
-                <div class="product-wrapper">
-                  <div class="product-img">
-                    <div class="product-img__wrapper">
-                      <img src="./img/3.jpg" alt="product" />
-                      <div class="product-pallete__wrapper">
-                        <ul class="product-pallete">
-                          <li class="product-pallete__item">
-                            <a href="javascript:void(0)"
-                              ><img
-                                class="product-pallete__img"
-                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTQnz0FKatyzNkArItXpdqcvmSmXqrtnjnBT7WAOu0LTffd1zGy"
-                                alt="металл"
-                            /></a>
-                          </li>
-                          <li class="product-pallete__item">
-                            <a href="javascript:void(0)"
-                              ><img
-                                class="product-pallete__img"
-                                src="https://s-media-cache-ak0.pinimg.com/564x/6c/78/ef/6c78eff719cfadc92682bcd8e2adddc4.jpg"
-                                alt="дерево"
-                            /></a>
-                          </li>
-                          <li class="product-pallete__item">
-                            <a href="javascript:void(0)"
-                              ><img
-                                class="product-pallete__img"
-                                src="https://st0.isolux.ru/media/catalog/product/cache/1/image/602f0fa2c1f0d1ba5e241f914e856ff9/4/2/42_4.jpg?kar=1&kf=1&kt=1&co=1&rgb%5B0%5D=255&rgb%5B1%5D=255&rgb%5B2%5D=255&ang=ang&qua=90"
-                                alt="пластик"
-                            /></a>
-                          </li>
-                        </ul>
+              <div class="product-category-wrap">
+                <div class="product-category-img">
+                  <div class="product-category-slider">
+                    <div class="product-category-slider__wrapper">
+                      <div class="product-category-slider__item">
+                        <a class="product-category-slider__link" href="1.html">
+                          <div class="product-category-slider__img-wrap">
+                            <img class="product-category-slider__img" src="./img/1.jpg" alt="" />
+                          </div>
+                          <div class="product-category-slider__info">
+                            <p>Настенный светильник</p>
+                            <span>Skarlat RWLB111 6W</span>
+                          </div>
+                        </a>
+                      </div>
+
+                      <div class="product-category-slider__item">
+                        <a class="product-category-slider__link" href="2.html">
+                          <div class="product-category-slider__img-wrap">
+                            <img class="product-category-slider__img" src="./img/2.jpg" alt="" />
+                          </div>
+                          <div class="product-category-slider__info">
+                            <p>Настенный светильник2</p>
+                            <span>Skarlat RWLB111 6W</span>
+                          </div>
+                        </a>
+                      </div>
+
+                      <div class="product-category-slider__item">
+                        <a class="product-category-slider__link" href="3.html">
+                          <div class="product-category-slider__img-wrap">
+                            <img class="product-category-slider__img" src="./img/3.jpg" alt="" />
+                          </div>
+                          <div class="product-category-slider__info">
+                            <p>Настенный светильник3</p>
+                            <span>Skarlat RWLB111 6W</span>
+                          </div>
+                        </a>
                       </div>
                     </div>
                   </div>
-                  <div class="product-info">
-                    <span class="product-title">
-                      Skarlat DG0712-LED 36W WH 6000K
-                    </span>
-                    <div class="product-price">
-                      <div class="product-price__new">
-                        <span class="product-price__value">32555</span>
-                        <span class="product-price__currency">грн</span>
+
+                  <div class="product-category-slider-thumbs">
+                    <div class="product-category-slider-thumbs__wrapper">
+                      <div class="product-category-slider-thumbs__item">
+                        <div style="background: red"></div>
                       </div>
-                      <div class="product-price__old">
-                        <span class="product-price__value">32555</span>
-                        <span class="product-price__currency">грн</span>
+                      <div class="product-category-slider-thumbs__item">
+                        <div style="background: white"></div>
+                      </div>
+                      <div class="product-category-slider-thumbs__item">
+                        <div style="background: black"></div>
                       </div>
                     </div>
                   </div>
                 </div>
+                <div class="product-category-slider-price">
+                  <span class="product-category-slider-price__old"
+                    >5648
+                    <span class="product-category-slider-price__old-currency">грн</span>
+                  </span>
+                  <span class="product-category-slider-price__new"
+                    >4648
+                    <span class="product-category-slider-price__new-currency">грн</span>
+                  </span>
+                </div>
               </div>
             </div>
+
             <div class="col-6 col-sm-6 col-md-4 col-lg-3">
-              <div class="product">
-                <div class="product-wrapper">
-                  <div class="product-img">
-                    <div class="product-img__wrapper">
-                      <img src="https://skarlat.ua/frontend/web/uploads/items/15850771037.jpg" alt="product" />
-                      <div class="product-pallete__wrapper">
-                        <ul class="product-pallete">
-                          <li class="product-pallete__item">
-                            <a href="javascript:void(0)"
-                              ><img
-                                class="product-pallete__img"
-                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTQnz0FKatyzNkArItXpdqcvmSmXqrtnjnBT7WAOu0LTffd1zGy"
-                                alt="металл"
-                            /></a>
-                          </li>
-                          <li class="product-pallete__item">
-                            <a href="javascript:void(0)"
-                              ><img
-                                class="product-pallete__img"
-                                src="https://s-media-cache-ak0.pinimg.com/564x/6c/78/ef/6c78eff719cfadc92682bcd8e2adddc4.jpg"
-                                alt="дерево"
-                            /></a>
-                          </li>
-                          <li class="product-pallete__item">
-                            <a href="javascript:void(0)"
-                              ><img
-                                class="product-pallete__img"
-                                src="https://st0.isolux.ru/media/catalog/product/cache/1/image/602f0fa2c1f0d1ba5e241f914e856ff9/4/2/42_4.jpg?kar=1&kf=1&kt=1&co=1&rgb%5B0%5D=255&rgb%5B1%5D=255&rgb%5B2%5D=255&ang=ang&qua=90"
-                                alt="пластик"
-                            /></a>
-                          </li>
-                        </ul>
+              <div class="product-category-wrap">
+                <div class="product-category-img">
+                  <div class="product-category-slider">
+                    <div class="product-category-slider__wrapper">
+                      <div class="product-category-slider__item">
+                        <a class="product-category-slider__link" href="1.html">
+                          <div class="product-category-slider__img-wrap">
+                            <img class="product-category-slider__img" src="./img/1.jpg" alt="" />
+                          </div>
+                          <div class="product-category-slider__info">
+                            <p>Настенный светильник</p>
+                            <span>Skarlat RWLB111 6W</span>
+                          </div>
+                        </a>
+                      </div>
+
+                      <div class="product-category-slider__item">
+                        <a class="product-category-slider__link" href="2.html">
+                          <div class="product-category-slider__img-wrap">
+                            <img class="product-category-slider__img" src="./img/2.jpg" alt="" />
+                          </div>
+                          <div class="product-category-slider__info">
+                            <p>Настенный светильник2</p>
+                            <span>Skarlat RWLB111 6W</span>
+                          </div>
+                        </a>
+                      </div>
+
+                      <div class="product-category-slider__item">
+                        <a class="product-category-slider__link" href="3.html">
+                          <div class="product-category-slider__img-wrap">
+                            <img class="product-category-slider__img" src="./img/3.jpg" alt="" />
+                          </div>
+                          <div class="product-category-slider__info">
+                            <p>Настенный светильник3</p>
+                            <span>Skarlat RWLB111 6W</span>
+                          </div>
+                        </a>
                       </div>
                     </div>
                   </div>
-                  <div class="product-info">
-                    <span class="product-title">
-                      Skarlat DG0712-LED 36W WH 6000K
-                    </span>
-                    <div class="product-price">
-                      <div class="product-price__new">
-                        <span class="product-price__value">32555</span>
-                        <span class="product-price__currency">грн</span>
+
+                  <div class="product-category-slider-thumbs">
+                    <div class="product-category-slider-thumbs__wrapper">
+                      <div class="product-category-slider-thumbs__item">
+                        <div style="background: red"></div>
                       </div>
-                      <div class="product-price__old">
-                        <span class="product-price__value">32555</span>
-                        <span class="product-price__currency">грн</span>
+                      <div class="product-category-slider-thumbs__item">
+                        <div style="background: white"></div>
+                      </div>
+                      <div class="product-category-slider-thumbs__item">
+                        <div style="background: black"></div>
                       </div>
                     </div>
                   </div>
                 </div>
+                <div class="product-category-slider-price">
+                  <span class="product-category-slider-price__old"
+                    >5648
+                    <span class="product-category-slider-price__old-currency">грн</span>
+                  </span>
+                  <span class="product-category-slider-price__new"
+                    >4648
+                    <span class="product-category-slider-price__new-currency">грн</span>
+                  </span>
+                </div>
               </div>
             </div>
+
             <div class="col-6 col-sm-6 col-md-4 col-lg-3">
-              <div class="product">
-                <div class="product-wrapper">
-                  <div class="product-img">
-                    <div class="product-img__wrapper">
-                      <img src="https://skarlat.ua/frontend/web/uploads/items/15850771037.jpg" alt="product" />
-                      <div class="product-pallete__wrapper">
-                        <ul class="product-pallete">
-                          <li class="product-pallete__item">
-                            <a href="javascript:void(0)"
-                              ><img
-                                class="product-pallete__img"
-                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTQnz0FKatyzNkArItXpdqcvmSmXqrtnjnBT7WAOu0LTffd1zGy"
-                                alt="металл"
-                            /></a>
-                          </li>
-                          <li class="product-pallete__item">
-                            <a href="javascript:void(0)"
-                              ><img
-                                class="product-pallete__img"
-                                src="https://s-media-cache-ak0.pinimg.com/564x/6c/78/ef/6c78eff719cfadc92682bcd8e2adddc4.jpg"
-                                alt="дерево"
-                            /></a>
-                          </li>
-                          <li class="product-pallete__item">
-                            <a href="javascript:void(0)"
-                              ><img
-                                class="product-pallete__img"
-                                src="https://st0.isolux.ru/media/catalog/product/cache/1/image/602f0fa2c1f0d1ba5e241f914e856ff9/4/2/42_4.jpg?kar=1&kf=1&kt=1&co=1&rgb%5B0%5D=255&rgb%5B1%5D=255&rgb%5B2%5D=255&ang=ang&qua=90"
-                                alt="пластик"
-                            /></a>
-                          </li>
-                        </ul>
+              <div class="product-category-wrap">
+                <div class="product-category-img">
+                  <div class="product-category-slider">
+                    <div class="product-category-slider__wrapper">
+                      <div class="product-category-slider__item">
+                        <a class="product-category-slider__link" href="1.html">
+                          <div class="product-category-slider__img-wrap">
+                            <img class="product-category-slider__img" src="./img/1.jpg" alt="" />
+                          </div>
+                          <div class="product-category-slider__info">
+                            <p>Настенный светильник</p>
+                            <span>Skarlat RWLB111 6W</span>
+                          </div>
+                        </a>
+                      </div>
+
+                      <div class="product-category-slider__item">
+                        <a class="product-category-slider__link" href="2.html">
+                          <div class="product-category-slider__img-wrap">
+                            <img class="product-category-slider__img" src="./img/2.jpg" alt="" />
+                          </div>
+                          <div class="product-category-slider__info">
+                            <p>Настенный светильник2</p>
+                            <span>Skarlat RWLB111 6W</span>
+                          </div>
+                        </a>
+                      </div>
+
+                      <div class="product-category-slider__item">
+                        <a class="product-category-slider__link" href="3.html">
+                          <div class="product-category-slider__img-wrap">
+                            <img class="product-category-slider__img" src="./img/3.jpg" alt="" />
+                          </div>
+                          <div class="product-category-slider__info">
+                            <p>Настенный светильник3</p>
+                            <span>Skarlat RWLB111 6W</span>
+                          </div>
+                        </a>
                       </div>
                     </div>
                   </div>
-                  <div class="product-info">
-                    <span class="product-title">
-                      Skarlat DG0712-LED 36W WH 6000K
-                    </span>
-                    <div class="product-price">
-                      <div class="product-price__new">
-                        <span class="product-price__value">32555</span>
-                        <span class="product-price__currency">грн</span>
+
+                  <div class="product-category-slider-thumbs">
+                    <div class="product-category-slider-thumbs__wrapper">
+                      <div class="product-category-slider-thumbs__item">
+                        <div style="background: red"></div>
                       </div>
-                      <div class="product-price__old">
-                        <span class="product-price__value">32555</span>
-                        <span class="product-price__currency">грн</span>
+                      <div class="product-category-slider-thumbs__item">
+                        <div style="background: white"></div>
+                      </div>
+                      <div class="product-category-slider-thumbs__item">
+                        <div style="background: black"></div>
                       </div>
                     </div>
                   </div>
                 </div>
+                <div class="product-category-slider-price">
+                  <span class="product-category-slider-price__old"
+                    >5648
+                    <span class="product-category-slider-price__old-currency">грн</span>
+                  </span>
+                  <span class="product-category-slider-price__new"
+                    >4648
+                    <span class="product-category-slider-price__new-currency">грн</span>
+                  </span>
+                </div>
               </div>
             </div>
+
             <div class="col-6 col-sm-6 col-md-4 col-lg-3">
-              <div class="product">
-                <div class="product-wrapper">
-                  <div class="product-img">
-                    <div class="product-img__wrapper">
-                      <img src="https://skarlat.ua/frontend/web/uploads/items/15850771037.jpg" alt="product" />
-                      <div class="product-pallete__wrapper">
-                        <ul class="product-pallete">
-                          <li class="product-pallete__item">
-                            <a href="javascript:void(0)"
-                              ><img
-                                class="product-pallete__img"
-                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTQnz0FKatyzNkArItXpdqcvmSmXqrtnjnBT7WAOu0LTffd1zGy"
-                                alt="металл"
-                            /></a>
-                          </li>
-                          <li class="product-pallete__item">
-                            <a href="javascript:void(0)"
-                              ><img
-                                class="product-pallete__img"
-                                src="https://s-media-cache-ak0.pinimg.com/564x/6c/78/ef/6c78eff719cfadc92682bcd8e2adddc4.jpg"
-                                alt="дерево"
-                            /></a>
-                          </li>
-                          <li class="product-pallete__item">
-                            <a href="javascript:void(0)"
-                              ><img
-                                class="product-pallete__img"
-                                src="https://st0.isolux.ru/media/catalog/product/cache/1/image/602f0fa2c1f0d1ba5e241f914e856ff9/4/2/42_4.jpg?kar=1&kf=1&kt=1&co=1&rgb%5B0%5D=255&rgb%5B1%5D=255&rgb%5B2%5D=255&ang=ang&qua=90"
-                                alt="пластик"
-                            /></a>
-                          </li>
-                        </ul>
+              <div class="product-category-wrap">
+                <div class="product-category-img">
+                  <div class="product-category-slider">
+                    <div class="product-category-slider__wrapper">
+                      <div class="product-category-slider__item">
+                        <a class="product-category-slider__link" href="1.html">
+                          <div class="product-category-slider__img-wrap">
+                            <img class="product-category-slider__img" src="./img/1.jpg" alt="" />
+                          </div>
+                          <div class="product-category-slider__info">
+                            <p>Настенный светильник</p>
+                            <span>Skarlat RWLB111 6W</span>
+                          </div>
+                        </a>
+                      </div>
+
+                      <div class="product-category-slider__item">
+                        <a class="product-category-slider__link" href="2.html">
+                          <div class="product-category-slider__img-wrap">
+                            <img class="product-category-slider__img" src="./img/2.jpg" alt="" />
+                          </div>
+                          <div class="product-category-slider__info">
+                            <p>Настенный светильник2</p>
+                            <span>Skarlat RWLB111 6W</span>
+                          </div>
+                        </a>
+                      </div>
+
+                      <div class="product-category-slider__item">
+                        <a class="product-category-slider__link" href="3.html">
+                          <div class="product-category-slider__img-wrap">
+                            <img class="product-category-slider__img" src="./img/3.jpg" alt="" />
+                          </div>
+                          <div class="product-category-slider__info">
+                            <p>Настенный светильник3</p>
+                            <span>Skarlat RWLB111 6W</span>
+                          </div>
+                        </a>
                       </div>
                     </div>
                   </div>
-                  <div class="product-info">
-                    <span class="product-title">
-                      Skarlat DG0712-LED 36W WH 6000K
-                    </span>
-                    <div class="product-price">
-                      <div class="product-price__new">
-                        <span class="product-price__value">32555</span>
-                        <span class="product-price__currency">грн</span>
+
+                  <div class="product-category-slider-thumbs">
+                    <div class="product-category-slider-thumbs__wrapper">
+                      <div class="product-category-slider-thumbs__item">
+                        <div style="background: red"></div>
                       </div>
-                      <div class="product-price__old">
-                        <span class="product-price__value">32555</span>
-                        <span class="product-price__currency">грн</span>
+                      <div class="product-category-slider-thumbs__item">
+                        <div style="background: white"></div>
+                      </div>
+                      <div class="product-category-slider-thumbs__item">
+                        <div style="background: black"></div>
                       </div>
                     </div>
                   </div>
                 </div>
+                <div class="product-category-slider-price">
+                  <span class="product-category-slider-price__old"
+                    >5648
+                    <span class="product-category-slider-price__old-currency">грн</span>
+                  </span>
+                  <span class="product-category-slider-price__new"
+                    >4648
+                    <span class="product-category-slider-price__new-currency">грн</span>
+                  </span>
+                </div>
               </div>
             </div>
+
             <div class="col-6 col-sm-6 col-md-4 col-lg-3">
-              <div class="product">
-                <div class="product-wrapper">
-                  <div class="product-img">
-                    <div class="product-img__wrapper">
-                      <img src="https://skarlat.ua/frontend/web/uploads/items/15850771037.jpg" alt="product" />
-                      <div class="product-pallete__wrapper">
-                        <ul class="product-pallete">
-                          <li class="product-pallete__item">
-                            <a href="javascript:void(0)"
-                              ><img
-                                class="product-pallete__img"
-                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTQnz0FKatyzNkArItXpdqcvmSmXqrtnjnBT7WAOu0LTffd1zGy"
-                                alt="металл"
-                            /></a>
-                          </li>
-                          <li class="product-pallete__item">
-                            <a href="javascript:void(0)"
-                              ><img
-                                class="product-pallete__img"
-                                src="https://s-media-cache-ak0.pinimg.com/564x/6c/78/ef/6c78eff719cfadc92682bcd8e2adddc4.jpg"
-                                alt="дерево"
-                            /></a>
-                          </li>
-                          <li class="product-pallete__item">
-                            <a href="javascript:void(0)"
-                              ><img
-                                class="product-pallete__img"
-                                src="https://st0.isolux.ru/media/catalog/product/cache/1/image/602f0fa2c1f0d1ba5e241f914e856ff9/4/2/42_4.jpg?kar=1&kf=1&kt=1&co=1&rgb%5B0%5D=255&rgb%5B1%5D=255&rgb%5B2%5D=255&ang=ang&qua=90"
-                                alt="пластик"
-                            /></a>
-                          </li>
-                        </ul>
+              <div class="product-category-wrap">
+                <div class="product-category-img">
+                  <div class="product-category-slider">
+                    <div class="product-category-slider__wrapper">
+                      <div class="product-category-slider__item">
+                        <a class="product-category-slider__link" href="1.html">
+                          <div class="product-category-slider__img-wrap">
+                            <img class="product-category-slider__img" src="./img/1.jpg" alt="" />
+                          </div>
+                          <div class="product-category-slider__info">
+                            <p>Настенный светильник</p>
+                            <span>Skarlat RWLB111 6W</span>
+                          </div>
+                        </a>
+                      </div>
+
+                      <div class="product-category-slider__item">
+                        <a class="product-category-slider__link" href="2.html">
+                          <div class="product-category-slider__img-wrap">
+                            <img class="product-category-slider__img" src="./img/2.jpg" alt="" />
+                          </div>
+                          <div class="product-category-slider__info">
+                            <p>Настенный светильник2</p>
+                            <span>Skarlat RWLB111 6W</span>
+                          </div>
+                        </a>
+                      </div>
+
+                      <div class="product-category-slider__item">
+                        <a class="product-category-slider__link" href="3.html">
+                          <div class="product-category-slider__img-wrap">
+                            <img class="product-category-slider__img" src="./img/3.jpg" alt="" />
+                          </div>
+                          <div class="product-category-slider__info">
+                            <p>Настенный светильник3</p>
+                            <span>Skarlat RWLB111 6W</span>
+                          </div>
+                        </a>
                       </div>
                     </div>
                   </div>
-                  <div class="product-info">
-                    <span class="product-title">
-                      Skarlat DG0712-LED 36W WH 6000K
-                    </span>
-                    <div class="product-price">
-                      <div class="product-price__new">
-                        <span class="product-price__value">32555</span>
-                        <span class="product-price__currency">грн</span>
+
+                  <div class="product-category-slider-thumbs">
+                    <div class="product-category-slider-thumbs__wrapper">
+                      <div class="product-category-slider-thumbs__item">
+                        <div style="background: red"></div>
                       </div>
-                      <div class="product-price__old">
-                        <span class="product-price__value">32555</span>
-                        <span class="product-price__currency">грн</span>
+                      <div class="product-category-slider-thumbs__item">
+                        <div style="background: white"></div>
+                      </div>
+                      <div class="product-category-slider-thumbs__item">
+                        <div style="background: black"></div>
                       </div>
                     </div>
                   </div>
                 </div>
+                <div class="product-category-slider-price">
+                  <span class="product-category-slider-price__old"
+                    >5648
+                    <span class="product-category-slider-price__old-currency">грн</span>
+                  </span>
+                  <span class="product-category-slider-price__new"
+                    >4648
+                    <span class="product-category-slider-price__new-currency">грн</span>
+                  </span>
+                </div>
               </div>
             </div>
-            <!-- 
-            <div class="col-6 col-md-4 col-lg-3">
-                <div class="product">
-                    <div class="product-wrapper">
-                        <div class="product-img">
-                            <div class="product-img__wrapper">
-                            <img src="./../../img/18.jpg" alt="product">
-                        </div>
-                            <div class="product-hover">
-                                <a href="javascript:void(0)">
-                                    <span class="product-title">Product name</span>
-                                    <small class="product-subtitle">Product category</small>
-                                </a>
-                                <button class="product-buy">Add to card</button>
-                            </div>
-                        </div>
-                        <div class="product-pallete__wrapper">
-                            <ul class="product-pallete">
-                                <li class=product-pallete__item> <a href="javascript:void(0)"><img class="product-pallete__img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTQnz0FKatyzNkArItXpdqcvmSmXqrtnjnBT7WAOu0LTffd1zGy" alt="металл"></a></li>
-                                <li class=product-pallete__item> <a href="javascript:void(0)"><img class="product-pallete__img" src="https://s-media-cache-ak0.pinimg.com/564x/6c/78/ef/6c78eff719cfadc92682bcd8e2adddc4.jpg" alt="дерево"></a></li>
-                                <li class=product-pallete__item> <a href="javascript:void(0)"><img class="product-pallete__img" src="https://st0.isolux.ru/media/catalog/product/cache/1/image/602f0fa2c1f0d1ba5e241f914e856ff9/4/2/42_4.jpg?kar=1&kf=1&kt=1&co=1&rgb%5B0%5D=255&rgb%5B1%5D=255&rgb%5B2%5D=255&ang=ang&qua=90" alt="пластик"></a></li>
-                            </ul>
-                            <span class="product-title"><a href="javascript:void(0)">Product name</a></span>
-                        </div>
 
+            <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+              <div class="product-category-wrap">
+                <div class="product-category-img">
+                  <div class="product-category-slider">
+                    <div class="product-category-slider__wrapper">
+                      <div class="product-category-slider__item">
+                        <a class="product-category-slider__link" href="1.html">
+                          <div class="product-category-slider__img-wrap">
+                            <img class="product-category-slider__img" src="./img/1.jpg" alt="" />
+                          </div>
+                          <div class="product-category-slider__info">
+                            <p>Настенный светильник</p>
+                            <span>Skarlat RWLB111 6W</span>
+                          </div>
+                        </a>
+                      </div>
+
+                      <div class="product-category-slider__item">
+                        <a class="product-category-slider__link" href="2.html">
+                          <div class="product-category-slider__img-wrap">
+                            <img class="product-category-slider__img" src="./img/2.jpg" alt="" />
+                          </div>
+                          <div class="product-category-slider__info">
+                            <p>Настенный светильник2</p>
+                            <span>Skarlat RWLB111 6W</span>
+                          </div>
+                        </a>
+                      </div>
+
+                      <div class="product-category-slider__item">
+                        <a class="product-category-slider__link" href="3.html">
+                          <div class="product-category-slider__img-wrap">
+                            <img class="product-category-slider__img" src="./img/3.jpg" alt="" />
+                          </div>
+                          <div class="product-category-slider__info">
+                            <p>Настенный светильник3</p>
+                            <span>Skarlat RWLB111 6W</span>
+                          </div>
+                        </a>
+                      </div>
                     </div>
-                </div>  
+                  </div>
+
+                  <div class="product-category-slider-thumbs">
+                    <div class="product-category-slider-thumbs__wrapper">
+                      <div class="product-category-slider-thumbs__item">
+                        <div style="background: red"></div>
+                      </div>
+                      <div class="product-category-slider-thumbs__item">
+                        <div style="background: white"></div>
+                      </div>
+                      <div class="product-category-slider-thumbs__item">
+                        <div style="background: black"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-category-slider-price">
+                  <span class="product-category-slider-price__old"
+                    >5648
+                    <span class="product-category-slider-price__old-currency">грн</span>
+                  </span>
+                  <span class="product-category-slider-price__new"
+                    >4648
+                    <span class="product-category-slider-price__new-currency">грн</span>
+                  </span>
+                </div>
+              </div>
             </div>
 
-            <div class="col-6 col-md-4 col-lg-3">
-                <div class="product">
-                    <div class="product-wrapper">
-                        <div class="product-img">
-                            <div class="product-img__wrapper">
-                            <img src="./../../img/17.jpg" alt="product">
-                        </div>
-                            <div class="product-hover">
-                                <a href="javascript:void(0)">
-                                    <span class="product-title">Product name</span>
-                                    <small class="product-subtitle">Product category</small>
-                                </a>
-                                <button class="product-buy">Add to card</button>
-                            </div>
-                        </div>
-                        <div class="product-pallete__wrapper">
-                            <ul class="product-pallete">
-                                <li class=product-pallete__item> <a href="javascript:void(0)"><img class="product-pallete__img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTQnz0FKatyzNkArItXpdqcvmSmXqrtnjnBT7WAOu0LTffd1zGy" alt="металл"></a></li>
-                                <li class=product-pallete__item> <a href="javascript:void(0)"><img class="product-pallete__img" src="https://s-media-cache-ak0.pinimg.com/564x/6c/78/ef/6c78eff719cfadc92682bcd8e2adddc4.jpg" alt="дерево"></a></li>
-                                <li class=product-pallete__item> <a href="javascript:void(0)"><img class="product-pallete__img" src="https://st0.isolux.ru/media/catalog/product/cache/1/image/602f0fa2c1f0d1ba5e241f914e856ff9/4/2/42_4.jpg?kar=1&kf=1&kt=1&co=1&rgb%5B0%5D=255&rgb%5B1%5D=255&rgb%5B2%5D=255&ang=ang&qua=90" alt="пластик"></a></li>
-                            </ul>
-                            <span class="product-title"><a href="javascript:void(0)">Product name</a></span>
-                        </div>
+            <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+              <div class="product-category-wrap">
+                <div class="product-category-img">
+                  <div class="product-category-slider">
+                    <div class="product-category-slider__wrapper">
+                      <div class="product-category-slider__item">
+                        <a class="product-category-slider__link" href="1.html">
+                          <div class="product-category-slider__img-wrap">
+                            <img class="product-category-slider__img" src="./img/1.jpg" alt="" />
+                          </div>
+                          <div class="product-category-slider__info">
+                            <p>Настенный светильник</p>
+                            <span>Skarlat RWLB111 6W</span>
+                          </div>
+                        </a>
+                      </div>
 
+                      <div class="product-category-slider__item">
+                        <a class="product-category-slider__link" href="2.html">
+                          <div class="product-category-slider__img-wrap">
+                            <img class="product-category-slider__img" src="./img/2.jpg" alt="" />
+                          </div>
+                          <div class="product-category-slider__info">
+                            <p>Настенный светильник2</p>
+                            <span>Skarlat RWLB111 6W</span>
+                          </div>
+                        </a>
+                      </div>
+
+                      <div class="product-category-slider__item">
+                        <a class="product-category-slider__link" href="3.html">
+                          <div class="product-category-slider__img-wrap">
+                            <img class="product-category-slider__img" src="./img/3.jpg" alt="" />
+                          </div>
+                          <div class="product-category-slider__info">
+                            <p>Настенный светильник3</p>
+                            <span>Skarlat RWLB111 6W</span>
+                          </div>
+                        </a>
+                      </div>
                     </div>
-                </div>  
+                  </div>
+
+                  <div class="product-category-slider-thumbs">
+                    <div class="product-category-slider-thumbs__wrapper">
+                      <div class="product-category-slider-thumbs__item">
+                        <div style="background: red"></div>
+                      </div>
+                      <div class="product-category-slider-thumbs__item">
+                        <div style="background: white"></div>
+                      </div>
+                      <div class="product-category-slider-thumbs__item">
+                        <div style="background: black"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-category-slider-price">
+                  <span class="product-category-slider-price__old"
+                    >5648
+                    <span class="product-category-slider-price__old-currency">грн</span>
+                  </span>
+                  <span class="product-category-slider-price__new"
+                    >4648
+                    <span class="product-category-slider-price__new-currency">грн</span>
+                  </span>
+                </div>
+              </div>
             </div>
 
-            <div class="col-6 col-md-4 col-lg-3">
-                <div class="product">
-                    <div class="product-wrapper">
-                        <div class="product-img">
-                            <div class="product-img__wrapper">
-                            <img src="./../../img/17.jpg" alt="product">
-                        </div>
-                            <div class="product-hover">
-                                <a href="javascript:void(0)">
-                                    <span class="product-title">Product name</span>
-                                    <small class="product-subtitle">Product category</small>
-                                </a>
-                                <button class="product-buy">Add to card</button>
-                            </div>
-                        </div>
-                        <div class="product-pallete__wrapper">
-                            <ul class="product-pallete">
-                                <li class=product-pallete__item> <a href="javascript:void(0)"><img class="product-pallete__img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTQnz0FKatyzNkArItXpdqcvmSmXqrtnjnBT7WAOu0LTffd1zGy" alt="металл"></a></li>
-                                <li class=product-pallete__item> <a href="javascript:void(0)"><img class="product-pallete__img" src="https://s-media-cache-ak0.pinimg.com/564x/6c/78/ef/6c78eff719cfadc92682bcd8e2adddc4.jpg" alt="дерево"></a></li>
-                                <li class=product-pallete__item> <a href="javascript:void(0)"><img class="product-pallete__img" src="https://st0.isolux.ru/media/catalog/product/cache/1/image/602f0fa2c1f0d1ba5e241f914e856ff9/4/2/42_4.jpg?kar=1&kf=1&kt=1&co=1&rgb%5B0%5D=255&rgb%5B1%5D=255&rgb%5B2%5D=255&ang=ang&qua=90" alt="пластик"></a></li>
-                            </ul>
-                            <span class="product-title"><a href="javascript:void(0)">Product name</a></span>
-                        </div>
+            <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+              <div class="product-category-wrap">
+                <div class="product-category-img">
+                  <div class="product-category-slider">
+                    <div class="product-category-slider__wrapper">
+                      <div class="product-category-slider__item">
+                        <a class="product-category-slider__link" href="1.html">
+                          <div class="product-category-slider__img-wrap">
+                            <img class="product-category-slider__img" src="./img/1.jpg" alt="" />
+                          </div>
+                          <div class="product-category-slider__info">
+                            <p>Настенный светильник</p>
+                            <span>Skarlat RWLB111 6W</span>
+                          </div>
+                        </a>
+                      </div>
 
+                      <div class="product-category-slider__item">
+                        <a class="product-category-slider__link" href="2.html">
+                          <div class="product-category-slider__img-wrap">
+                            <img class="product-category-slider__img" src="./img/2.jpg" alt="" />
+                          </div>
+                          <div class="product-category-slider__info">
+                            <p>Настенный светильник2</p>
+                            <span>Skarlat RWLB111 6W</span>
+                          </div>
+                        </a>
+                      </div>
+
+                      <div class="product-category-slider__item">
+                        <a class="product-category-slider__link" href="3.html">
+                          <div class="product-category-slider__img-wrap">
+                            <img class="product-category-slider__img" src="./img/3.jpg" alt="" />
+                          </div>
+                          <div class="product-category-slider__info">
+                            <p>Настенный светильник3</p>
+                            <span>Skarlat RWLB111 6W</span>
+                          </div>
+                        </a>
+                      </div>
                     </div>
-                </div>  
+                  </div>
+
+                  <div class="product-category-slider-thumbs">
+                    <div class="product-category-slider-thumbs__wrapper">
+                      <div class="product-category-slider-thumbs__item">
+                        <div style="background: red"></div>
+                      </div>
+                      <div class="product-category-slider-thumbs__item">
+                        <div style="background: white"></div>
+                      </div>
+                      <div class="product-category-slider-thumbs__item">
+                        <div style="background: black"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-category-slider-price">
+                  <span class="product-category-slider-price__old"
+                    >5648
+                    <span class="product-category-slider-price__old-currency">грн</span>
+                  </span>
+                  <span class="product-category-slider-price__new"
+                    >4648
+                    <span class="product-category-slider-price__new-currency">грн</span>
+                  </span>
+                </div>
+              </div>
             </div>
 
-            <div class="col-6 col-md-4 col-lg-3">
-                <div class="product">
-                    <div class="product-wrapper">
-                        <div class="product-img">
-                            <div class="product-img__wrapper">
-                            <img src="./../../img/17.jpg" alt="product">
-                        </div>
-                            <div class="product-hover">
-                                <a href="javascript:void(0)">
-                                    <span class="product-title">Product name</span>
-                                    <small class="product-subtitle">Product category</small>
-                                </a>
-                                <button class="product-buy">Add to card</button>
-                            </div>
-                        </div>
-                        <div class="product-pallete__wrapper">
-                            <ul class="product-pallete">
-                                <li class=product-pallete__item> <a href="javascript:void(0)"><img class="product-pallete__img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTQnz0FKatyzNkArItXpdqcvmSmXqrtnjnBT7WAOu0LTffd1zGy" alt="металл"></a></li>
-                                <li class=product-pallete__item> <a href="javascript:void(0)"><img class="product-pallete__img" src="https://s-media-cache-ak0.pinimg.com/564x/6c/78/ef/6c78eff719cfadc92682bcd8e2adddc4.jpg" alt="дерево"></a></li>
-                                <li class=product-pallete__item> <a href="javascript:void(0)"><img class="product-pallete__img" src="https://st0.isolux.ru/media/catalog/product/cache/1/image/602f0fa2c1f0d1ba5e241f914e856ff9/4/2/42_4.jpg?kar=1&kf=1&kt=1&co=1&rgb%5B0%5D=255&rgb%5B1%5D=255&rgb%5B2%5D=255&ang=ang&qua=90" alt="пластик"></a></li>
-                            </ul>
-                            <span class="product-title"><a href="javascript:void(0)">Product name</a></span>
-                        </div>
+            <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+              <div class="product-category-wrap">
+                <div class="product-category-img">
+                  <div class="product-category-slider">
+                    <div class="product-category-slider__wrapper">
+                      <div class="product-category-slider__item">
+                        <a class="product-category-slider__link" href="1.html">
+                          <div class="product-category-slider__img-wrap">
+                            <img class="product-category-slider__img" src="./img/1.jpg" alt="" />
+                          </div>
+                          <div class="product-category-slider__info">
+                            <p>Настенный светильник</p>
+                            <span>Skarlat RWLB111 6W</span>
+                          </div>
+                        </a>
+                      </div>
 
+                      <div class="product-category-slider__item">
+                        <a class="product-category-slider__link" href="2.html">
+                          <div class="product-category-slider__img-wrap">
+                            <img class="product-category-slider__img" src="./img/2.jpg" alt="" />
+                          </div>
+                          <div class="product-category-slider__info">
+                            <p>Настенный светильник2</p>
+                            <span>Skarlat RWLB111 6W</span>
+                          </div>
+                        </a>
+                      </div>
+
+                      <div class="product-category-slider__item">
+                        <a class="product-category-slider__link" href="3.html">
+                          <div class="product-category-slider__img-wrap">
+                            <img class="product-category-slider__img" src="./img/3.jpg" alt="" />
+                          </div>
+                          <div class="product-category-slider__info">
+                            <p>Настенный светильник3</p>
+                            <span>Skarlat RWLB111 6W</span>
+                          </div>
+                        </a>
+                      </div>
                     </div>
-                </div>  
+                  </div>
+
+                  <div class="product-category-slider-thumbs">
+                    <div class="product-category-slider-thumbs__wrapper">
+                      <div class="product-category-slider-thumbs__item">
+                        <div style="background: red"></div>
+                      </div>
+                      <div class="product-category-slider-thumbs__item">
+                        <div style="background: white"></div>
+                      </div>
+                      <div class="product-category-slider-thumbs__item">
+                        <div style="background: black"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-category-slider-price">
+                  <span class="product-category-slider-price__old"
+                    >5648
+                    <span class="product-category-slider-price__old-currency">грн</span>
+                  </span>
+                  <span class="product-category-slider-price__new"
+                    >4648
+                    <span class="product-category-slider-price__new-currency">грн</span>
+                  </span>
+                </div>
+              </div>
             </div>
-
-            <div class="col-6 col-md-4 col-lg-3">
-                <div class="product">
-                    <div class="product-wrapper">
-                        <div class="product-img">
-                            <div class="product-img__wrapper">
-                            <img src="./../../img/17.jpg" alt="product">
-                        </div>
-                            <div class="product-hover">
-                                <a href="javascript:void(0)">
-                                    <span class="product-title">Product name</span>
-                                    <small class="product-subtitle">Product category</small>
-                                </a>
-                                <button class="product-buy">Add to card</button>
-                            </div>
-                        </div>
-                        <div class="product-pallete__wrapper">
-                            <ul class="product-pallete">
-                                <li class=product-pallete__item> <a href="javascript:void(0)"><img class="product-pallete__img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTQnz0FKatyzNkArItXpdqcvmSmXqrtnjnBT7WAOu0LTffd1zGy" alt="металл"></a></li>
-                                <li class=product-pallete__item> <a href="javascript:void(0)"><img class="product-pallete__img" src="https://s-media-cache-ak0.pinimg.com/564x/6c/78/ef/6c78eff719cfadc92682bcd8e2adddc4.jpg" alt="дерево"></a></li>
-                                <li class=product-pallete__item> <a href="javascript:void(0)"><img class="product-pallete__img" src="https://st0.isolux.ru/media/catalog/product/cache/1/image/602f0fa2c1f0d1ba5e241f914e856ff9/4/2/42_4.jpg?kar=1&kf=1&kt=1&co=1&rgb%5B0%5D=255&rgb%5B1%5D=255&rgb%5B2%5D=255&ang=ang&qua=90" alt="пластик"></a></li>
-                            </ul>
-                            <span class="product-title"><a href="javascript:void(0)">Product name</a></span>
-                        </div>
-
-                    </div>
-                </div>  
-            </div>
-
-            <div class="col-6 col-md-4 col-lg-3">
-                <div class="product">
-                    <div class="product-wrapper">
-                        <div class="product-img">
-                            <div class="product-img__wrapper">
-                            <img src="./../../img/17.jpg" alt="product">
-                        </div>
-                            <div class="product-hover">
-                                <a href="javascript:void(0)">
-                                    <span class="product-title">Product name</span>
-                                    <small class="product-subtitle">Product category</small>
-                                </a>
-                                <button class="product-buy">Add to card</button>
-                            </div>
-                        </div>
-                        <div class="product-pallete__wrapper">
-                            <ul class="product-pallete">
-                                <li class=product-pallete__item> <a href="javascript:void(0)"><img class="product-pallete__img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTQnz0FKatyzNkArItXpdqcvmSmXqrtnjnBT7WAOu0LTffd1zGy" alt="металл"></a></li>
-                                <li class=product-pallete__item> <a href="javascript:void(0)"><img class="product-pallete__img" src="https://s-media-cache-ak0.pinimg.com/564x/6c/78/ef/6c78eff719cfadc92682bcd8e2adddc4.jpg" alt="дерево"></a></li>
-                                <li class=product-pallete__item> <a href="javascript:void(0)"><img class="product-pallete__img" src="https://st0.isolux.ru/media/catalog/product/cache/1/image/602f0fa2c1f0d1ba5e241f914e856ff9/4/2/42_4.jpg?kar=1&kf=1&kt=1&co=1&rgb%5B0%5D=255&rgb%5B1%5D=255&rgb%5B2%5D=255&ang=ang&qua=90" alt="пластик"></a></li>
-                            </ul>
-                            <span class="product-title"><a href="javascript:void(0)">Product name</a></span>
-                        </div>
-
-                    </div>
-                </div>  
-            </div>
-
-            <div class="col-6 col-md-4 col-lg-3">
-                <div class="product">
-                    <div class="product-wrapper">
-                        <div class="product-img">
-                            <div class="product-img__wrapper">
-                            <img src="./../../img/17.jpg" alt="product">
-                        </div>
-                            <div class="product-hover">
-                                <a href="javascript:void(0)">
-                                    <span class="product-title">Product name</span>
-                                    <small class="product-subtitle">Product category</small>
-                                </a>
-                                <button class="product-buy">Add to card</button>
-                            </div>
-                        </div>
-                        <div class="product-pallete__wrapper">
-                            <ul class="product-pallete">
-                                <li class=product-pallete__item> <a href="javascript:void(0)"><img class="product-pallete__img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTQnz0FKatyzNkArItXpdqcvmSmXqrtnjnBT7WAOu0LTffd1zGy" alt="металл"></a></li>
-                                <li class=product-pallete__item> <a href="javascript:void(0)"><img class="product-pallete__img" src="https://s-media-cache-ak0.pinimg.com/564x/6c/78/ef/6c78eff719cfadc92682bcd8e2adddc4.jpg" alt="дерево"></a></li>
-                                <li class=product-pallete__item> <a href="javascript:void(0)"><img class="product-pallete__img" src="https://st0.isolux.ru/media/catalog/product/cache/1/image/602f0fa2c1f0d1ba5e241f914e856ff9/4/2/42_4.jpg?kar=1&kf=1&kt=1&co=1&rgb%5B0%5D=255&rgb%5B1%5D=255&rgb%5B2%5D=255&ang=ang&qua=90" alt="пластик"></a></li>
-                            </ul>
-                            <span class="product-title"><a href="javascript:void(0)">Product name</a></span>
-                        </div>
-
-                    </div>
-                </div>  
-            </div> -->
           </div>
         </div>
       </div>
