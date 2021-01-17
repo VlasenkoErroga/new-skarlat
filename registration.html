@@ -536,7 +536,7 @@
           <div class="row">
             <div class="col-12">
               <div class="order-block-head">
-                <h2>Выберите свой вариант авторизации</h2>
+                <h2>Регистрация</h2>
               </div>
             </div>
           </div>
@@ -548,32 +548,15 @@
           <div class="col-12">
             <div class="order-block-body">
               <div class="row">
-                <div class="col-12 col-md-6 d-flex justify-content-start">
-                  <form class="order-form-auth" onsubmit="return false">
-                    <h2>Вход в аккаунт</h2>
-                    <div class="form-group">
-                      <label for="email-user">E-mail:</label>
-                      <input id="email-user" type="text" name="email" autocomplete="email" />
-                    </div>
-                    <div class="form-group">
-                      <label for="pass-user">Пароль:</label>
-                      <input id="pass-user" type="password" name="password" autocomplete="current-password" />
-                    </div>
-
-                    <button type="submit" class="primary send-form">Войти в аккаунт</button>
-                    <a href="javascript:void(0)">Забыли пароль?</a>
-                    <a href="javascript:void(0)">Создать новый аккаунт</a>
-                  </form>
-                </div>
-                <div class="col-12 col-md-6 d-flex justify-content-end">
+                <div class="col-12 col-lg-6 col-md-10 offset-lg-3 offset-md-1 d-flex justify-content-start">
                   <form class="order-form-callback" onsubmit="return false">
                     <h2>Продолжить как гость</h2>
                     <div class="form-group">
-                      <label for="name-user">Имя</label>
+                      <label for="name-user">Имя:</label>
                       <input id="name-user" type="text" name="name" autocomplete="name" />
                     </div>
                     <div class="form-group">
-                      <label for="phone-user">Номер телефона</label>
+                      <label for="phone-user">Номер телефона:</label>
                       <input
                         id="phone-user"
                         name="phone"
@@ -583,7 +566,19 @@
                         data-mask="+38 (0__) ___-__-__"
                       />
                     </div>
-                    <button type="submit" class="primary send-form" data-send-callback="true">Отправить</button>
+                    <div class="form-group">
+                      <label for="email-user">E-mail:</label>
+                      <input id="email-user" type="text" name="email" autocomplete="email" />
+                    </div>
+                    <div class="form-group">
+                      <label for="pass-user">Пароль:</label>
+                      <input id="pass-user" type="password" name="password" autocomplete="current-password" />
+                    </div>
+                    <div class="form-group">
+                      <label for="pass-user-repeat">Подтверждение пароля:</label>
+                      <input id="pass-user-repeat" type="password" name="password" autocomplete="current-password" />
+                    </div>
+                    <button type="submit" class="primary send-form" data-send-callback="true">Регистрация</button>
                   </form>
                 </div>
               </div>
