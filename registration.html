@@ -531,58 +531,51 @@
         </div>
       </div>
 
-      <div class="order-block-head-wrap">
+      <section class="bg-lightgrey">
         <div class="container">
           <div class="row">
             <div class="col-12">
-              <div class="order-block-head">
-                <h2>Регистрация</h2>
+              <div class="block-head">
+                <h1>Авторизация</h1>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div class="container">
+      <div class="container  block-mb">
         <div class="row">
-          <div class="col-12">
-            <div class="order-block-body">
-              <div class="row">
-                <div class="col-12 col-lg-6 col-md-10 offset-lg-3 offset-md-1 d-flex justify-content-start">
-                  <form class="order-form-callback" onsubmit="return false">
-                    <h2>Продолжить как гость</h2>
-                    <div class="form-group">
-                      <label for="name-user">Имя:</label>
-                      <input id="name-user" type="text" name="name" autocomplete="name" />
-                    </div>
-                    <div class="form-group">
-                      <label for="phone-user">Номер телефона:</label>
-                      <input
-                        id="phone-user"
-                        name="phone"
-                        autocomplete="phone"
-                        type="text"
-                        placeholder="+38 (0__) ___-__-__"
-                        data-mask="+38 (0__) ___-__-__"
-                      />
-                    </div>
-                    <div class="form-group">
-                      <label for="email-user">E-mail:</label>
-                      <input id="email-user" type="text" name="email" autocomplete="email" />
-                    </div>
-                    <div class="form-group">
-                      <label for="pass-user">Пароль:</label>
-                      <input id="pass-user" type="password" name="password" autocomplete="current-password" />
-                    </div>
-                    <div class="form-group">
-                      <label for="pass-user-repeat">Подтверждение пароля:</label>
-                      <input id="pass-user-repeat" type="password" name="password" autocomplete="current-password" />
-                    </div>
-                    <button type="submit" class="primary send-form" data-send-callback="true">Регистрация</button>
-                  </form>
-                </div>
+          <div class="col-12 d-flex justify-content-center">
+            <form class="order-form-callback" onsubmit="return false">
+              <div class="form-group">
+                <label for="name-user">Имя:</label>
+                <input id="name-user" type="text" name="name" autocomplete="name" />
               </div>
-            </div>
+              <div class="form-group">
+                <label for="phone-user">Номер телефона:</label>
+                <input
+                  id="phone-user"
+                  name="phone"
+                  autocomplete="phone"
+                  type="text"
+                  placeholder="+38 (0__) ___-__-__"
+                  data-mask="+38 (0__) ___-__-__"
+                />
+              </div>
+              <div class="form-group">
+                <label for="email-user">E-mail:</label>
+                <input id="email-user" type="text" name="email" autocomplete="email" />
+              </div>
+              <div class="form-group">
+                <label for="pass-user">Пароль:</label>
+                <input id="pass-user" type="password" name="password" autocomplete="current-password" />
+              </div>
+              <div class="form-group">
+                <label for="pass-user-repeat">Подтверждение пароля:</label>
+                <input id="pass-user-repeat" type="password" name="password" autocomplete="current-password" />
+              </div>
+              <button type="submit" class="primary send-form" data-send-callback="true">Регистрация</button>
+            </form>
           </div>
         </div>
       </div>
