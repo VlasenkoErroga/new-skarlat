@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+
+    <link rel="shortcut icon" href="favicon/favicon.ico" />
+
+    <link rel="stylesheet" href="css/style.bundle.css" />
+
+    <title>No named | Catalog product page</title>
+
+    <!--[if lt IE 9]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+  </head>
+
+  <body>
+    <!-- Header -->
+
+    <header class="header">
+      <div class="header-content">
+        <div class="header-content__wrap">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <div class="header-content-wrapper">
+                  <button class="header-btn header-burger" id="burger">
+                    <span></span>
+                    <span></span>
+                  </button>
+                  <a href="https://vlasenkoerroga.github.io/no-name-deploy" class="logo">
+                    <svg viewBox="0 0 332 54.1">
+                      <path
+                        class="header-logo__path-1"
+                        d="M12 11.1c-.4-.8-.5-1.7-.3-2.5s.7-1.5 1.5-2c.8-.4 1.7-.5 2.5-.3s1.5.7 2 1.5l11.9 20.7c.4.6.6 1.4.6 2.1 0 .7-.1 1.3-.4 1.9l-12.2 20c-.5.8-1.2 1.3-2 1.5-.8.2-1.6.1-2.4-.3-.8-.5-1.3-1.2-1.5-2-.2-.8-.1-1.6.3-2.4l9.7-15.9H3.3c-.9 0-1.7-.4-2.3-1-.6-.6-1-1.4-1-2.3 0-.9.4-1.7 1-2.3.6-.6 1.4-1 2.3-1H21l-9-15.7z"
+                      ></path>
+                      <path
+                        class="header-logo__path-2"
+                        fill="red"
+                        d="M29.1 40.7c-.5-.8-.5-1.7-.3-2.5s.7-1.5 1.5-2 1.7-.5 2.5-.3 1.5.7 2 1.5l6.8 11.7c.5.8.5 1.7.3 2.5s-.7 1.5-1.5 2-1.7.5-2.5.3-1.5-.7-2-1.5l-6.8-11.7zm6.8-32.8c.5-.8 1.2-1.4 2-1.6.8-.2 1.6-.1 2.4.3l.1.1c.8.5 1.3 1.2 1.5 2 .2.8.1 1.7-.3 2.5L35.4 22c-.5.8-1.2 1.3-2 1.5-.8.2-1.6.1-2.4-.3h-.1c-.8-.5-1.3-1.2-1.5-2-.2-.8-.1-1.6.3-2.4v-.1l6.2-10.8zm.7 25.3c-.9 0-1.7-.4-2.3-1-.6-.6-1-1.4-1-2.3 0-.9.4-1.7 1-2.3.6-.6 1.4-1 2.3-1h13.8c.9 0 1.7.4 2.3 1 .6.6 1 1.4 1 2.3 0 .9-.4 1.7-1 2.3-.6.6-1.4 1-2.3 1H36.6z"
+                      ></path>
+                      <path
+                        class="header-logo__path-3"
+                        fill-rule="evenodd"
+                        d="M83.8 16.3h11.1v-6c-3.5 0-10.4-.4-13.4.2-5.3 1.1-9.4 5.6-9.4 11.5 0 5.8 5 11.6 10.9 11.6h8.9c3 0 5.4 2.7 5.4 5.7 0 2.7-1.9 5-4.4 5.6-3 .7-16.4.1-20.4.1v5.8h19.9c6.4 0 11.6-5.2 11.7-11.6.1-5-3.9-11.6-9.2-11.6H83.7c-3.2.1-5.7-2.3-5.7-5.6 0-3.4 2.6-5.5 5.8-5.7zm235.2-5h-6.1V0H306v32.9c1.3 13 11.4 18.5 23.4 18.5h2.6v-6h-3.8c-7.3 0-13.8-4.9-15.2-12.1 0-.1 0-.3-.1-.4V17.5h6.1v-6.2zm-25 33.5c-3.8 4-9.1 6.6-15.1 6.6-11.4 0-20.6-9.2-20.6-20.6 0-11.4 9.2-20.6 20.6-20.6 11.4 0 20.6 9.2 20.6 20.6l.4 20.2H294v-6.2zm-14.8-28.4c7.8 0 14.1 6.3 14.1 14.1s-6.3 14.1-14.1 14.1-14.1-6.3-14.1-14.1 6.3-14.1 14.1-14.1zm-41.3 16.5V10.2H231v22.7c1.3 13 11.4 18.5 23.4 18.5h2.6v-6h-3.8c-7.3 0-13.8-4.9-15.2-12.1 0-.2 0-.3-.1-.4zm-32.1-4.2v22.7h-6.9V28.7c1.2-12.5 11-18.5 22.7-18.5h3.2v6H221c-7.3 0-13.8 4.9-15.2 12.1.1.2.1.3 0 .4zm-19.3 16.1c-3.8 4-9.1 6.6-15.1 6.6-11.4 0-20.6-9.2-20.6-20.6 0-11.4 9.2-20.6 20.6-20.6 11.4 0 20.6 9.2 20.6 20.6l.4 20.2h-5.9v-6.2zm-14.8-28.4c7.8 0 14.1 6.3 14.1 14.1s-6.3 14.1-14.1 14.1-14.1-6.3-14.1-14.1 6.3-14.1 14.1-14.1zm-43.2 16.3c9.6 2.6 11.7 9.1 11.7 18.4h6.8c0-11.1-1.7-20.5-14.7-23.9l11.8-16.9h-8.4l-11 16.1H117V10.2h-7.2v40.7h7.2V32.6c2 0 10.2-.3 11.5.1z"
+                      ></path>
+                    </svg>
+                  </a>
+                  <div class="header-nav-wrapper">
+                    <form class="header-search__wrapper hide" id="header-search-block">
+                      <label class="header-search__label" for="header-search">Поиск:</label>
+                      <input type="text" class="header-search" id="header-search" />
+                      <div class="header-search__form-btn">
+                        <button class="header-btn" id="" type="submit">
+                          <svg width="20" height="20" viewBox="0 0 20 20">
+                            <path
+                              d="M19.8105 18.9119L14.6468 13.8308C15.999 12.3616 16.8298 10.4187 16.8298 8.28068C16.8292 3.7071 13.0621 0 8.41471 0C3.76737 0 0.000244141 3.7071 0.000244141 8.28068C0.000244141 12.8543 3.76737 16.5614 8.41471 16.5614C10.4227 16.5614 12.2644 15.8668 13.711 14.7122L18.8947 19.8134C19.1472 20.0622 19.5573 20.0622 19.8099 19.8134C20.0631 19.5646 20.0631 19.1607 19.8105 18.9119ZM8.41471 15.2873C4.48256 15.2873 1.29493 12.1504 1.29493 8.28068C1.29493 4.41101 4.48256 1.27403 8.41471 1.27403C12.3469 1.27403 15.5345 4.41101 15.5345 8.28068C15.5345 12.1504 12.3469 15.2873 8.41471 15.2873Z"
+                            />
+                          </svg>
+                        </button>
+                        <button class="header-btn hide" id="header-search-reset" data-reset="true" type="reset">
+                          <svg x="0px" y="0px" viewBox="0 0 30 30">
+                            <path
+                              d="M25,6.2L23.8,5L15,13.8L6.2,5L5,6.2l8.8,8.8L5,23.8L6.2,25l8.8-8.8l8.8,8.8l1.2-1.2L16.2,15L25,6.2z"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                    </form>
+                    <nav class="header-nav show" id="header-nav-info">
+                      <ul class="header-list tab">
+                        <li class="header-list__item" data-tab="category">Категории</li>
+                        <li class="header-list__item" data-tab="info">Информация</li>
+                        <li class="header-list__item">Кто мы</li>
+                        <li class="header-list__item" data-tab="help">Помощь</li>
+                        <li class="header-list__item">
+                          <a class="header-lang active" href="/ru">Ru</a>
+                          <a class="header-lang " href="/ua">Ua</a>
+                        </li>
+                        <li class="header-list__item" data-open="false">
+                          <button class="header-btn" id="header-phone" data-open="true">
+                            <svg width="20" height="20" viewBox="0 0 20 20">
+                              <g clip-path="url(#clip0)">
+                                <path
+                                  d="M19.2337 4.08383C18.4662 3.02786 17.1223 2.07473 15.4494 1.40012C13.7856 0.729183 11.8537 0.358168 10.0096 0.355512C8.16532 0.350902 6.23106 0.71809 4.56481 1.38383C2.88902 2.0534 1.54187 3.00239 0.771675 4.05586C0.0319082 5.0677 -0.181295 6.15829 0.155072 7.20973C0.373276 7.89184 1.0098 8.35079 1.73937 8.35184L4.23746 8.35418C4.23828 8.35418 4.2391 8.35418 4.23996 8.35418C4.73809 8.35415 5.20609 8.1361 5.52414 7.75567C5.83883 7.3793 5.96918 6.88743 5.8818 6.4061C5.87926 6.392 5.87613 6.37793 5.87258 6.36399L5.74113 5.85297C6.46903 5.50567 8.11825 4.83465 10.0019 4.84532C11.8842 4.85497 13.5322 5.52559 14.261 5.87305L14.1275 6.38118C14.1237 6.39555 14.1205 6.41004 14.1177 6.42461C14.029 6.90567 14.1579 7.3979 14.4715 7.77516C14.789 8.15719 15.2574 8.37665 15.7568 8.37739L18.2549 8.37973C18.2557 8.37973 18.2566 8.37973 18.2574 8.37973C18.9856 8.37969 19.6223 7.92286 19.8422 7.24219C20.1817 6.19098 19.9713 5.09883 19.2337 4.08383ZM18.7063 6.87524C18.6471 7.05836 18.4626 7.1861 18.257 7.1861C18.2568 7.1861 18.2565 7.1861 18.2563 7.1861L15.7582 7.18375C15.6143 7.18356 15.4799 7.12102 15.3894 7.01215C15.3402 6.95297 15.2635 6.82989 15.2886 6.65872L15.5371 5.71329C15.6052 5.45418 15.4923 5.18153 15.261 5.04629C15.1647 4.98997 12.8677 3.66629 10.008 3.65157C9.99208 3.65149 9.97665 3.65145 9.96079 3.65145C7.1195 3.65145 4.83887 4.96934 4.74266 5.02575C4.51285 5.16051 4.4002 5.43122 4.46656 5.68926L4.71016 6.63622C4.73504 6.80774 4.65781 6.93082 4.6084 6.98997C4.51781 7.09832 4.38352 7.16043 4.23961 7.16043C4.23937 7.16043 4.23914 7.16043 4.23891 7.16043L1.74078 7.15809C1.53519 7.15778 1.35062 7.02942 1.29195 6.8459C1.07351 6.16305 1.22265 5.46129 1.73523 4.7602C3.09683 2.89786 6.56559 1.54899 9.98923 1.54899C9.99532 1.54899 10.0018 1.54899 10.0079 1.54899C13.435 1.55391 16.9089 2.91504 18.2682 4.78543C18.7795 5.48922 18.9269 6.19231 18.7063 6.87524Z"
+                                />
+                                <path
+                                  d="M15.6483 10.9299L13.7854 8.97381C13.6727 8.85553 13.5165 8.78861 13.3532 8.78861H12.1493V7.97521C12.1493 7.64561 11.8821 7.37842 11.5525 7.37842C11.2229 7.37842 10.9557 7.64561 10.9557 7.97521V8.78861H9.0447V7.97521C9.0447 7.64561 8.77751 7.37842 8.4479 7.37842C8.11829 7.37842 7.8511 7.64561 7.8511 7.97521V8.78861H6.64724C6.48392 8.78861 6.32771 8.85557 6.21509 8.97381L4.3522 10.9299C2.89157 12.4635 2.08716 14.4745 2.08716 16.5924V19.0476C2.08716 19.3772 2.35435 19.6444 2.68396 19.6444H17.3165C17.6461 19.6444 17.9133 19.3772 17.9133 19.0476V16.5924C17.9133 14.4745 17.1089 12.4635 15.6483 10.9299ZM3.28075 18.4508V16.5924C3.28075 14.7824 3.96821 13.0638 5.21657 11.753L6.90306 9.98213H13.0974L14.7839 11.753C16.0322 13.0637 16.7197 14.7824 16.7197 16.5924V18.4508H3.28075Z"
+                                />
+                                <path
+                                  d="M10.0002 11.2163C8.27797 11.2163 6.87683 12.6175 6.87683 14.3397C6.87683 16.062 8.27801 17.4631 10.0002 17.4631C11.7225 17.4631 13.1236 16.062 13.1236 14.3397C13.1236 12.6174 11.7225 11.2163 10.0002 11.2163ZM10.0002 16.2695C8.93609 16.2695 8.07043 15.4038 8.07043 14.3397C8.07043 13.2756 8.93613 12.4099 10.0002 12.4099C11.0643 12.4099 11.93 13.2756 11.93 14.3397C11.93 15.4038 11.0643 16.2695 10.0002 16.2695Z"
+                                />
+                              </g>
+                            </svg>
+                          </button>
+                        </li>
+                        <li class="header-list__item" data-open="false">
+                          <button class="header-btn" id="header-search-btn" data-open="true">
+                            <svg width="20" height="20" viewBox="0 0 20 20">
+                              <path
+                                d="M19.8105 18.9119L14.6468 13.8308C15.999 12.3616 16.8298 10.4187 16.8298 8.28068C16.8292 3.7071 13.0621 0 8.41471 0C3.76737 0 0.000244141 3.7071 0.000244141 8.28068C0.000244141 12.8543 3.76737 16.5614 8.41471 16.5614C10.4227 16.5614 12.2644 15.8668 13.711 14.7122L18.8947 19.8134C19.1472 20.0622 19.5573 20.0622 19.8099 19.8134C20.0631 19.5646 20.0631 19.1607 19.8105 18.9119ZM8.41471 15.2873C4.48256 15.2873 1.29493 12.1504 1.29493 8.28068C1.29493 4.41101 4.48256 1.27403 8.41471 1.27403C12.3469 1.27403 15.5345 4.41101 15.5345 8.28068C15.5345 12.1504 12.3469 15.2873 8.41471 15.2873Z"
+                              />
+                            </svg>
+                          </button>
+                        </li>
+                        <li class="header-list__item" data-open="false">
+                          <button class="header-btn show" id="header-basket-btn" data-open="true">
+                            <svg width="20" height="20" viewBox="0 0 18 18">
+                              <path
+                                d="M12.2,11.8h-0.8c-0.2,0-0.4-0.1-0.5-0.4c0-0.2,0-0.4,0.1-0.5c1.6-1.4,2.7-4.2,2.7-5.9c0-2.6-2.1-4.7-4.7-4.7    S4.5,2.4,4.5,5c0,1.8,1,4.5,2.7,5.9c0.1,0.1,0.2,0.3,0.1,0.5c-0.1,0.2-0.2,0.4-0.5,0.4H6c-2.6,0-4.7,2.1-4.7,4.7v1    c0,0.3,0.2,0.5,0.5,0.5h14.5c0.3,0,0.5-0.2,0.5-0.5v-1C16.9,13.9,14.8,11.8,12.2,11.8z M15.9,17H2.4v-0.5c0-2,1.6-3.6,3.6-3.6h0.8    c0.7,0,1.3-0.5,1.5-1.1c0.1-0.6-0.1-1.2-0.5-1.6C6.4,8.9,5.5,6.5,5.5,5c0-2,1.6-3.6,3.6-3.6S12.8,3,12.8,5c0,1.5-0.9,4-2.3,5.1    c-0.4,0.4-0.6,1-0.5,1.6c0.2,0.7,0.8,1.1,1.5,1.1h0.8c2,0,3.6,1.6,3.6,3.6V17z"
+                              />
+                            </svg>
+                          </button>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="header-tab__wrapper">
+          <div class="header-tab-content">
+            <nav class="header-tab-content__nav">
+              <ul class="header-tab-content__list hide" data-tab="category">
+                <li class="header-tab-content__item">
+                  <a href="#" class="header-tab-content__link">
+                    <div class="header-tab-content__img" style="background-image:url('./img/category/1.jpg');"></div>
+                    <span class="header-tab-content__title">Premium 1</span>
+                  </a>
+                </li>
+                <li class="header-tab-content__item">
+                  <a href="#" class="header-tab-content__link">
+                    <div class="header-tab-content__img" style="background-image:url('./img/category/2.jpg');"></div>
+                    <span class="header-tab-content__title">LED - светильники</span>
+                  </a>
+                </li>
+                <li class="header-tab-content__item">
+                  <a href="#" class="header-tab-content__link">
+                    <div class="header-tab-content__img" style="background-image:url('./img/category/3.jpg');"></div>
+                    <span class="header-tab-content__title">Трековые системы</span>
+                  </a>
+                </li>
+                <li class="header-tab-content__item">
+                  <a href="#" class="header-tab-content__link">
+                    <div class="header-tab-content__img" style="background-image:url('./img/category/4.jpg');"></div>
+                    <span class="header-tab-content__title">LOFT</span>
+                  </a>
+                </li>
+                <li class="header-tab-content__item">
+                  <a href="#" class="header-tab-content__link">
+                    <div class="header-tab-content__img" style="background-image:url('./img/category/5.jpg');"></div>
+                    <span class="header-tab-content__title">Умные светильники</span>
+                  </a>
+                </li>
+                <li class="header-tab-content__item">
+                  <a href="#" class="header-tab-content__link">
+                    <div class="header-tab-content__img" style="background-image:url('./img/category/6.jpg');"></div>
+                    <span class="header-tab-content__title">Светильники для ванной</span>
+                  </a>
+                </li>
+                <li class="header-tab-content__item">
+                  <a href="#" class="header-tab-content__link">
+                    <div class="header-tab-content__img" style="background-image:url('./img/category/7.jpg');"></div>
+                    <span class="header-tab-content__title">Уличные светильники</span>
+                  </a>
+                </li>
+                <li class="header-tab-content__item">
+                  <a href="#" class="header-tab-content__link">
+                    <div class="header-tab-content__img" style="background-image:url('./img/category/12.jpg');"></div>
+                    <span class="header-tab-content__title">Детские светильники</span>
+                  </a>
+                </li>
+              </ul>
+              <ul class="header-tab-content__list hide" data-tab="info">
+                <li class="header-tab-content__item">
+                  <a href="#" class="header-tab-content__link">
+                    <div class="header-tab-content__img" style="background-image:url('./img/category/1.jpg');"></div>
+                    <span class="header-tab-content__title">Premium 2</span>
+                  </a>
+                </li>
+                <li class="header-tab-content__item">
+                  <a href="#" class="header-tab-content__link">
+                    <div class="header-tab-content__img" style="background-image:url('./img/category/2.jpg');"></div>
+                    <span class="header-tab-content__title">LED - светильники</span>
+                  </a>
+                </li>
+                <li class="header-tab-content__item">
+                  <a href="#" class="header-tab-content__link">
+                    <div class="header-tab-content__img" style="background-image:url('./img/category/3.jpg');"></div>
+                    <span class="header-tab-content__title">Трековые системы</span>
+                  </a>
+                </li>
+                <li class="header-tab-content__item">
+                  <a href="#" class="header-tab-content__link">
+                    <div class="header-tab-content__img" style="background-image:url('./img/category/4.jpg');"></div>
+                    <span class="header-tab-content__title">LOFT</span>
+                  </a>
+                </li>
+                <li class="header-tab-content__item">
+                  <a href="#" class="header-tab-content__link">
+                    <div class="header-tab-content__img" style="background-image:url('./img/category/5.jpg');"></div>
+                    <span class="header-tab-content__title">Умные светильники</span>
+                  </a>
+                </li>
+                <li class="header-tab-content__item">
+                  <a href="#" class="header-tab-content__link">
+                    <div class="header-tab-content__img" style="background-image:url('./img/category/6.jpg');"></div>
+                    <span class="header-tab-content__title">Светильники для ванной</span>
+                  </a>
+                </li>
+                <li class="header-tab-content__item">
+                  <a href="#" class="header-tab-content__link">
+                    <div class="header-tab-content__img" style="background-image:url('./img/category/7.jpg');"></div>
+                    <span class="header-tab-content__title">Уличные светильники</span>
+                  </a>
+                </li>
+                <li class="header-tab-content__item">
+                  <a href="#" class="header-tab-content__link">
+                    <div class="header-tab-content__img" style="background-image:url('./img/category/12.jpg');"></div>
+                    <span class="header-tab-content__title">Детские светильники</span>
+                  </a>
+                </li>
+              </ul>
+              <ul class="header-tab-content__list hide" data-tab="help">
+                <li class="header-tab-content__item">
+                  <a href="#" class="header-tab-content__link">
+                    <div class="header-tab-content__img" style="background-image:url('./img/category/1.jpg');"></div>
+                    <span class="header-tab-content__title">Premium 3</span>
+                  </a>
+                </li>
+                <li class="header-tab-content__item">
+                  <a href="#" class="header-tab-content__link">
+                    <div class="header-tab-content__img" style="background-image:url('./img/category/2.jpg');"></div>
+                    <span class="header-tab-content__title">LED - светильники</span>
+                  </a>
+                </li>
+                <li class="header-tab-content__item">
+                  <a href="#" class="header-tab-content__link">
+                    <div class="header-tab-content__img" style="background-image:url('./img/category/3.jpg');"></div>
+                    <span class="header-tab-content__title">Трековые системы</span>
+                  </a>
+                </li>
+                <li class="header-tab-content__item">
+                  <a href="#" class="header-tab-content__link">
+                    <div class="header-tab-content__img" style="background-image:url('./img/category/4.jpg');"></div>
+                    <span class="header-tab-content__title">LOFT</span>
+                  </a>
+                </li>
+                <li class="header-tab-content__item">
+                  <a href="#" class="header-tab-content__link">
+                    <div class="header-tab-content__img" style="background-image:url('./img/category/5.jpg');"></div>
+                    <span class="header-tab-content__title">Умные светильники</span>
+                  </a>
+                </li>
+                <li class="header-tab-content__item">
+                  <a href="#" class="header-tab-content__link">
+                    <div class="header-tab-content__img" style="background-image:url('./img/category/6.jpg');"></div>
+                    <span class="header-tab-content__title">Светильники для ванной</span>
+                  </a>
+                </li>
+                <li class="header-tab-content__item">
+                  <a href="#" class="header-tab-content__link">
+                    <div class="header-tab-content__img" style="background-image:url('./img/category/7.jpg');"></div>
+                    <span class="header-tab-content__title">Уличные светильники</span>
+                  </a>
+                </li>
+                <li class="header-tab-content__item">
+                  <a href="#" class="header-tab-content__link">
+                    <div class="header-tab-content__img" style="background-image:url('./img/category/12.jpg');"></div>
+                    <span class="header-tab-content__title">Детские светильники</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-wrapper hide" id="menu">
+        <input class="header-search-menu" type="text" placeholder="Поиск на skarlat.ua" />
+        <nav class="menu-nav" id="burger-nav-menu">
+          <ul class="menu-list">
+            <li data-category="true" class="menu-item-category arrow" id="menu-item-category">
+              <a class="menu-link" href="javascript:void(0)">Категории</a>
+            </li>
+            <li data-about="true" class="menu-item">
+              <a class="menu-link" href="javascript:void(0)">О компании</a>
+            </li>
+            <li data-help="true" class="menu-item">
+              <a class="menu-link" href="javascript:void(0)">Помощь</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="javascript:void(0)">Информация</a>
+            </li>
+            <li class="menu-item red">
+              <a class="menu-link" href="mailto:shop@skarlat.ua?subject=Вопрос о товаре">shop@skarlat.ua</a>
+            </li>
+            <li class="menu-item red">
+              <a class="menu-link" href="tel:+380968490824">+38 (096) 849 08 24</a>
+            </li>
+          </ul>
+        </nav>
+        <div id="menu-category" class="menu-category">
+          <ul class="menu-list">
+            <li class="menu-item">
+              <a class="menu-link" href="javascript:void(0)">Premium</a>
+            </li>
+            <li class="menu-item arrow">
+              <a class="menu-link" href="javascript:void(0)">LED - светильники</a>
+              <div class="menu-collapse">
+                <ul class="menu-list">
+                  <li class="menu-item">
+                    <a class="menu-link" href="javascript:void(0)">Точечные</a>
+                  </li>
+                  <li class="menu-item">
+                    <a class="menu-link" href="javascript:void(0)">Споты</a>
+                  </li>
+                  <li class="menu-item">
+                    <a class="menu-link" href="javascript:void(0)">Настенные и бра</a>
+                  </li>
+                  <li class="menu-item">
+                    <a class="menu-link" href="javascript:void(0)">Подвесные</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="menu-item arrow">
+              <a class="menu-link" href="javascript:void(0)">Трековые системы</a>
+              <div class="menu-collapse">
+                <ul class="menu-list">
+                  <li class="menu-item">
+                    <a class="menu-link" href="javascript:void(0)">Трековые светильники</a>
+                  </li>
+                  <li class="menu-item">
+                    <a class="menu-link" href="javascript:void(0)">Комплектующие для трековых систем</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="menu-item arrow">
+              <a class="menu-link" href="javascript:void(0)">LOFT</a>
+              <div class="menu-collapse">
+                <ul class="menu-list">
+                  <li class="menu-item">
+                    <a class="menu-link" href="javascript:void(0)">Люстры-подвесы</a>
+                  </li>
+                  <li class="menu-item">
+                    <a class="menu-link" href="javascript:void(0)">Потолочные люстры</a>
+                  </li>
+                  <li class="menu-item">
+                    <a class="menu-link" href="javascript:void(0)">Настенные и бра</a>
+                  </li>
+                  <li class="menu-item">
+                    <a class="menu-link" href="javascript:void(0)">Потолочные светильники</a>
+                  </li>
+                  <li class="menu-item">
+                    <a class="menu-link" href="javascript:void(0)">Подвесные светильники</a>
+                  </li>
+                  <li class="menu-item">
+                    <a class="menu-link" href="javascript:void(0)">Настольные лампы</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="javascript:void(0)">Умные светильники</a>
+            </li>
+            <li class="menu-item arrow">
+              <a class="menu-link" href="javascript:void(0)">Светильники для ванной</a>
+              <div class="menu-collapse">
+                <ul class="menu-list">
+                  <li class="menu-item">
+                    <a class="menu-link" href="javascript:void(0)">Потолочные светильники для ванной</a>
+                  </li>
+                  <li class="menu-item">
+                    <a class="menu-link" href="javascript:void(0)">Точечные светильники для ванной</a>
+                  </li>
+                  <li class="menu-item">
+                    <a class="menu-link" href="javascript:void(0)">Бра для ванной</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="javascript:void(0)">Уличные светильники</a>
+            </li>
+            <li class="menu-item arrow">
+              <a class="menu-link" href="javascript:void(0)">Детские светильники</a>
+              <div class="menu-collapse">
+                <ul class="menu-list">
+                  <li class="menu-item">
+                    <a class="menu-link" href="javascript:void(0)">Люстры в детскую</a>
+                  </li>
+                  <li class="menu-item">
+                    <a class="menu-link" href="javascript:void(0)">Светильники в детскую</a>
+                  </li>
+                  <li class="menu-item">
+                    <a class="menu-link" href="javascript:void(0)">Бра в детскую</a>
+                  </li>
+                  <li class="menu-item">
+                    <a class="menu-link" href="javascript:void(0)">Настольные лампы в детскую</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="javascript:void(0)">Настольные лампы</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="javascript:void(0)">Торшеры</a>
+            </li>
+            <li class="menu-item arrow">
+              <a class="menu-link" href="javascript:void(0)">Комплектующие</a>
+              <div class="menu-collapse">
+                <ul class="menu-list">
+                  <li class="menu-item">
+                    <a class="menu-link" href="javascript:void(0)">LED лампы</a>
+                  </li>
+                  <li class="menu-item">
+                    <a class="menu-link" href="javascript:void(0)">LED лента</a>
+                  </li>
+                  <li class="menu-item">
+                    <a class="menu-link" href="javascript:void(0)">Блоки питания</a>
+                  </li>
+                  <li class="menu-item">
+                    <a class="menu-link" href="javascript:void(0)">Алюминиевый профиль</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="javascript:void(0)">Наборы DIY</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- Header end -->
+
+    <!-- Main -->
+
+    <main>
+      <aside class="basket-aside__wrap">
+        <div class="basket-aside" id="basket">
+          <a href="#" class="account">
+            <svg viewBox="0 0 25 25">
+              <g>
+                <path
+                  d="M24.5801 11.176L13.3635 0.955395C12.8711 0.506714 12.1287 0.506763 11.6366 0.955346L0.419826 11.176C0.0254415 11.5354 -0.104832 12.0891 0.0878438 12.5866C0.280568 13.0841 0.749805 13.4056 1.28335 13.4056H3.07485V23.6458C3.07485 24.0518 3.40405 24.381 3.81005 24.381H9.95819C10.3642 24.381 10.6934 24.0519 10.6934 23.6458V17.4283H14.3068V23.6459C14.3068 24.0519 14.636 24.3811 15.042 24.3811H21.1898C21.5958 24.3811 21.925 24.0519 21.925 23.6459V13.4056H23.7169C24.2503 13.4056 24.7196 13.0841 24.9124 12.5866C25.1048 12.0891 24.9745 11.5354 24.5801 11.176Z"
+                  fill="#787878"
+                />
+                <path
+                  d="M21.7329 2.08643H16.7954L22.4681 7.24442V2.82158C22.4681 2.41558 22.1389 2.08643 21.7329 2.08643Z"
+                  fill="#787878"
+                />
+              </g>
+            </svg>
+            <div class="account-info">
+              <span>Ирина</span>
+              <p>mail@mail.com</p>
+            </div>
+          </a>
+
+          <nav class="basket-aside__nav">
+            <ul class="basket-aside__list">
+              <li class="basket-aside__item">
+                <svg class="basket-aside__label" viewBox="0 0 18 18" fill="none">
+                  <g>
+                    <path
+                      d="M16.4185 5.83606H4.63555C3.82804 5.83606 3.15241 6.44117 3.06385 7.24347L2.98584 7.9454H17.951L17.9902 7.59313C18.0969 6.63783 17.3388 5.83606 16.4185 5.83606Z"
+                      fill="black"
+                    />
+                    <path
+                      d="M2.86812 9L2.04736 16.3827H2.63651H15.5977C15.7996 16.3827 15.9932 16.3448 16.1715 16.2756C16.7063 16.0678 17.103 15.577 17.1694 14.9753L17.8334 9H2.86812Z"
+                      fill="black"
+                    />
+                    <path
+                      d="M15.4872 3.72665H8.12837L6.17354 1.77182C6.07465 1.67293 5.94077 1.61731 5.80071 1.61731H1.582C0.709664 1.61731 0 2.32697 0 3.19934V14.8007C0 15.4669 0.41509 16.0354 0.99907 16.2683L2.01512 7.12703C2.16345 5.78969 3.28968 4.78134 4.63535 4.78134H16.4183C16.6133 4.78134 16.8052 4.80514 16.9925 4.84708C16.7935 4.20077 16.1979 3.72665 15.4872 3.72665Z"
+                      fill="black"
+                    />
+                  </g>
+                </svg>
+                <a class="basket-aside__link" href="javascript:void(0)">Корзина (5) </a>
+              </li>
+              <li class="basket-aside__item">
+                <svg class="basket-aside__label" viewBox="0 0 18 18">
+                  <path
+                    d="M13.2539 1.08984C11.121 1.08984 9.75199 2.57941 9.03516 3.92098C8.31832 2.57941 6.87937 1.08984 4.74609 1.08984C2.04047 1.08984 0 3.30398 0 6.24059C0 9.41871 2.55938 11.5991 6.43324 14.9006C7.11914 15.4856 7.9207 16.1082 8.68816 16.7797C8.78695 16.8669 8.91176 16.9102 9.03516 16.9102C9.15891 16.9102 9.28336 16.8669 9.38215 16.7797C10.1496 16.1082 10.8809 15.4856 11.5668 14.9006C15.4406 11.5991 18 9.41871 18 6.24059C18 3.30398 15.9595 1.08984 13.2539 1.08984Z"
+                    fill="black"
+                  />
+                </svg>
+                <a class="basket-aside__link" href="javascript:void(0)">Избранное</a>
+              </li>
+              <li class="basket-aside__item">
+                <svg class="basket-aside__label" viewBox="0 0 18 18">
+                  <g>
+                    <path
+                      d="M13.2227 0H2.67578C1.80341 0 1.09375 0.709664 1.09375 1.58203V14.3086C1.09375 14.9952 1.53595 15.5751 2.14844 15.7935V5.1828C2.14844 4.47884 2.42294 3.81656 2.92093 3.31857L4.41232 1.82718C4.91031 1.32919 5.57259 1.05469 6.27655 1.05469H14.7076C14.4891 0.442195 13.9093 0 13.2227 0Z"
+                      fill="black"
+                    />
+                    <path
+                      d="M15.332 2.11646C10.6728 2.11646 12.0288 2.11646 7.42188 2.11646V5.80083C7.42188 6.09227 7.18598 6.33521 6.89453 6.33521H3.20312V16.4181C3.20312 17.2906 3.91258 18.0001 4.78516 18.0001H15.332C16.2043 18.0001 16.907 17.2906 16.907 16.4181V3.69146C16.907 2.81923 16.2043 2.11646 15.332 2.11646ZM14.2773 14.836H5.83984C5.5484 14.836 5.3125 14.6001 5.3125 14.3087C5.3125 14.0172 5.5484 13.7813 5.83984 13.7813H14.2773C14.5688 13.7813 14.8047 14.0172 14.8047 14.3087C14.8047 14.6001 14.5688 14.836 14.2773 14.836ZM14.2773 12.7266H5.83984C5.5484 12.7266 5.3125 12.4907 5.3125 12.1993C5.3125 11.9079 5.5484 11.672 5.83984 11.672H14.2773C14.5688 11.672 14.8047 11.9079 14.8047 12.1993C14.8047 12.4907 14.5688 12.7266 14.2773 12.7266ZM14.2773 10.6173H5.83984C5.5484 10.6173 5.3125 10.3814 5.3125 10.0899C5.3125 9.79848 5.5484 9.56258 5.83984 9.56258H14.2773C14.5688 9.56258 14.8047 9.79848 14.8047 10.0899C14.8047 10.3814 14.5688 10.6173 14.2773 10.6173ZM14.2773 8.5079H5.83984C5.5484 8.5079 5.3125 8.272 5.3125 7.98055C5.3125 7.68911 5.5484 7.45321 5.83984 7.45321H14.2773C14.5688 7.45321 14.8047 7.68911 14.8047 7.98055C14.8047 8.272 14.5688 8.5079 14.2773 8.5079Z"
+                      fill="black"
+                    />
+                    <path
+                      d="M6.27656 2.10938C5.85426 2.10938 5.45672 2.27419 5.15803 2.57287L3.66663 4.06427C3.31503 4.41584 3.20312 4.80895 3.20312 5.27344H6.3672V2.10938H6.27656Z"
+                      fill="black"
+                    />
+                  </g>
+                </svg>
+                <a class="basket-aside__link" href="javascript:void(0)">Заказы</a>
+              </li>
+              <li class="basket-aside__item">
+                <svg class="basket-aside__label" viewBox="0 0 18 18">
+                  <path
+                    d="M12.1641 11.6719H11.3745C10.9199 11.6719 10.7212 11.1055 11.0468 10.8299C12.7139 9.41484 13.7461 6.53625 13.7461 4.74609C13.7461 2.12906 11.617 0 9 0C6.38262 0 4.25391 2.12906 4.25391 4.74609C4.25391 6.53625 5.28574 9.41484 6.95285 10.8299C7.2777 11.1048 7.08082 11.6719 6.6252 11.6719H5.83594C3.21855 11.6719 1.08984 13.8009 1.08984 16.418V17.4727C1.08984 17.7641 1.32574 18 1.61719 18H16.3828C16.6743 18 16.9102 17.7641 16.9102 17.4727V16.418C16.9102 13.8009 14.7811 11.6719 12.1641 11.6719Z"
+                    fill="black"
+                  />
+                </svg>
+                <a class="basket-aside__link" href="javascript:void(0)">Аккаунт</a>
+              </li>
+              <li class="basket-aside__item">
+                <svg class="basket-aside__label" viewBox="0 0 18 18">
+                  <path
+                    d="M9.03516 0C4.09184 0 0 4.02152 0 8.96484C0 13.9082 4.09184 18 9.03516 18C13.9785 18 18 13.9082 18 8.96484C18 4.02152 13.9785 0 9.03516 0ZM13.7812 10.0195H10.0898V13.7812C10.0898 14.3627 9.61629 14.8359 9.03516 14.8359C8.45367 14.8359 7.98047 14.3627 7.98047 13.7812V10.0195H4.21875C3.63727 10.0195 3.16406 9.54633 3.16406 8.96484C3.16406 8.38336 3.63727 7.91016 4.21875 7.91016H7.98047V4.21875C7.98047 3.63727 8.45367 3.16406 9.03516 3.16406C9.61629 3.16406 10.0898 3.63727 10.0898 4.21875V7.91016H13.7812C14.3624 7.91016 14.8359 8.38336 14.8359 8.96484C14.8359 9.54633 14.3624 10.0195 13.7812 10.0195Z"
+                    fill="black"
+                  />
+                </svg>
+                <a class="basket-aside__link" href="javascript:void(0)">Регистрация</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </aside>
+      <div class="breadcrumb-block">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <ul class="breadcrumb">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">lamp</a></li>
+                <li><a href="#">Track</a></li>
+                <li>Skarlat lf9873</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="lk" id="lk">
+        <div class="lk-container">
+          <div class="lk-nav">
+            <div class="lk-nav__title welcome">
+              <span>Здравствуйте, Ирина</span>
+              <a href="#">Выход</a>
+            </div>
+            <ul>
+              <li data-open="profil">
+                <svg viewBox="0 0 18 18">
+                  <path
+                    d="M12.1641 11.6719H11.3745C10.9199 11.6719 10.7212 11.1055 11.0468 10.8299C12.7139 9.41484 13.7461 6.53625 13.7461 4.74609C13.7461 2.12906 11.617 0 9 0C6.38262 0 4.25391 2.12906 4.25391 4.74609C4.25391 6.53625 5.28574 9.41484 6.95285 10.8299C7.2777 11.1048 7.08082 11.6719 6.6252 11.6719H5.83594C3.21855 11.6719 1.08984 13.8009 1.08984 16.418V17.4727C1.08984 17.7641 1.32574 18 1.61719 18H16.3828C16.6743 18 16.9102 17.7641 16.9102 17.4727V16.418C16.9102 13.8009 14.7811 11.6719 12.1641 11.6719Z"
+                  /></svg
+                >Профиль
+              </li>
+              <li data-open="delivery">
+                <svg viewBox="0 0 20 20">
+                  <g>
+                    <path d="M7.62488 3.9765V14.1485L12.3827 16.0233V5.85138L7.62488 3.9765Z" />
+                    <path d="M3.52332 4.98195V15.2306L6.44519 14.1655V3.91672L3.52332 4.98195Z" />
+                    <path d="M13.5624 5.83432V16.0831L16.4843 15.0178V4.76917L13.5624 5.83432Z" />
+                    <path
+                      d="M19.2137 0.0362213L12.9789 2.30341L7.24844 0.0424713C7.11562 -0.0106537 6.96836 -0.0129974 6.83086 0.0362213L0.385547 2.37997C0.154297 2.46392 0 2.68388 0 2.93032V19.4138C0 19.8243 0.408984 20.1032 0.785938 19.9642L7.0207 17.6974L12.7512 19.9579C12.8852 20.0122 13.0316 20.0142 13.1687 19.9642L19.6141 17.6204C19.8453 17.5364 20 17.3165 20 17.07V0.586573C20 0.177628 19.5926 -0.102451 19.2137 0.0362213ZM17.6562 15.4283C17.6562 15.6751 17.5016 15.8947 17.2703 15.979C17.1051 16.0392 13.1687 17.4911 13.0086 17.4911C12.7824 17.4911 7.27109 15.2728 7.06094 15.1888L3.12969 16.6181C2.75078 16.7568 2.34375 16.4763 2.34375 16.0677V4.57216C2.34375 4.32528 2.49805 4.10575 2.7293 4.02177L6.79062 2.54482C6.92812 2.4956 7.07695 2.49794 7.20859 2.55107L7.25898 2.57138H7.25937L12.9387 4.812L16.8699 3.38232C17.2496 3.24442 17.6562 3.52372 17.6562 3.9331V15.4283Z"
+                    />
+                  </g></svg
+                >Доставка
+              </li>
+              <li data-open="favorite">
+                <svg viewBox="0 0 18 18">
+                  <path
+                    d="M13.2539 1.08984C11.121 1.08984 9.75199 2.57941 9.03516 3.92098C8.31832 2.57941 6.87937 1.08984 4.74609 1.08984C2.04047 1.08984 0 3.30398 0 6.24059C0 9.41871 2.55938 11.5991 6.43324 14.9006C7.11914 15.4856 7.9207 16.1082 8.68816 16.7797C8.78695 16.8669 8.91176 16.9102 9.03516 16.9102C9.15891 16.9102 9.28336 16.8669 9.38215 16.7797C10.1496 16.1082 10.8809 15.4856 11.5668 14.9006C15.4406 11.5991 18 9.41871 18 6.24059C18 3.30398 15.9595 1.08984 13.2539 1.08984Z"
+                  /></svg
+                >Избранное
+              </li>
+              <li data-open="question">
+                <svg viewBox="0 0 20 20">
+                  <path
+                    d="M10.0391 0C4.54648 0 0 4.46836 0 9.96094C0 15.4535 4.54648 20 10.0391 20C15.5316 20 20 15.4535 20 9.96094C20 4.46836 15.5316 0 10.0391 0ZM10.0391 17.0703C9.39297 17.0703 8.86719 16.5445 8.86719 15.8984C8.86719 15.2523 9.39297 14.7266 10.0391 14.7266C10.6848 14.7266 11.2109 15.2523 11.2109 15.8984C11.2109 16.5445 10.6848 17.0703 10.0391 17.0703ZM12.116 9.86758C11.5316 10.2969 11.2109 11.4309 11.2109 11.9969V12.3047C11.2109 12.9508 10.6848 13.4766 10.0391 13.4766C9.39297 13.4766 8.86719 12.9508 8.86719 12.3047V11.9969C8.86719 10.6824 9.54609 8.84531 10.7309 7.97773C11.641 7.30937 11.1684 5.85938 10.0391 5.85938C9.39297 5.85938 8.86719 6.38516 8.86719 7.03125C8.86719 7.67734 8.34102 8.20312 7.69531 8.20312C7.04922 8.20312 6.52344 7.67734 6.52344 7.03125C6.52344 5.09258 8.10039 3.51562 10.0391 3.51562C11.9777 3.51562 13.5547 5.09258 13.5547 7.03125C13.5547 8.14727 13.0168 9.20742 12.116 9.86758Z"
+                  /></svg
+                >Вопрос-ответ
+              </li>
+            </ul>
+            <div class="lk-nav__title">
+              <span>Заказы</span>
+            </div>
+            <ul>
+              <li data-open="new-order">
+                <svg viewBox="0 0 20 20">
+                  <g>
+                    <path
+                      d="M16.3481 7.23105L10.4887 0.199805C10.2668 -0.0666016 9.73322 -0.0666016 9.51095 0.199805L3.65158 7.23105C3.33243 7.6127 3.60626 8.19238 4.10158 8.19238H7.03126V14.7266C7.03126 15.0504 7.29337 15.3125 7.6172 15.3125H12.3828C12.7067 15.3125 12.9688 15.0504 12.9688 14.7266V8.19238H15.8985C16.3938 8.19238 16.6672 7.6127 16.3481 7.23105Z"
+                    />
+                    <path
+                      d="M19.4141 11.7969H17.0703C16.7465 11.7969 16.4844 12.059 16.4844 12.3828V16.4844H3.51562V12.3828C3.51562 12.059 3.25352 11.7969 2.92969 11.7969H0.585938C0.262109 11.7969 0 12.059 0 12.3828V18.2422C0 19.2117 0.788281 20 1.75781 20H18.2422C19.2113 20 20 19.2117 20 18.2422V12.3828C20 12.059 19.7379 11.7969 19.4141 11.7969Z"
+                    />
+                  </g></svg
+                >Новые заказы
+              </li>
+              <li data-open="history">
+                <svg viewBox="0 0 18 18">
+                  <g>
+                    <path
+                      d="M13.2225 0H2.67566C1.80329 0 1.09363 0.709664 1.09363 1.58203V14.3086C1.09363 14.9952 1.53582 15.5751 2.14832 15.7935V5.1828C2.14832 4.47884 2.42282 3.81656 2.9208 3.31857L4.4122 1.82718C4.91019 1.32919 5.57246 1.05469 6.27643 1.05469H14.7074C14.489 0.442195 13.9091 0 13.2225 0Z"
+                    />
+                    <path
+                      d="M15.3322 2.11639C10.6729 2.11639 12.0289 2.11639 7.422 2.11639V5.80077C7.422 6.09221 7.1861 6.33514 6.89465 6.33514H3.20325V16.418C3.20325 17.2906 3.9127 18 4.78528 18H15.3322C16.2044 18 16.9072 17.2906 16.9072 16.418V3.69139C16.9072 2.81917 16.2044 2.11639 15.3322 2.11639ZM14.2775 14.836H5.83997C5.54852 14.836 5.31262 14.6001 5.31262 14.3086C5.31262 14.0172 5.54852 13.7813 5.83997 13.7813H14.2775C14.5689 13.7813 14.8048 14.0172 14.8048 14.3086C14.8048 14.6001 14.5689 14.836 14.2775 14.836ZM14.2775 12.7266H5.83997C5.54852 12.7266 5.31262 12.4907 5.31262 12.1992C5.31262 11.9078 5.54852 11.6719 5.83997 11.6719H14.2775C14.5689 11.6719 14.8048 11.9078 14.8048 12.1992C14.8048 12.4907 14.5689 12.7266 14.2775 12.7266ZM14.2775 10.6172H5.83997C5.54852 10.6172 5.31262 10.3813 5.31262 10.0899C5.31262 9.79842 5.54852 9.56252 5.83997 9.56252H14.2775C14.5689 9.56252 14.8048 9.79842 14.8048 10.0899C14.8048 10.3813 14.5689 10.6172 14.2775 10.6172ZM14.2775 8.50784H5.83997C5.54852 8.50784 5.31262 8.27194 5.31262 7.98049C5.31262 7.68905 5.54852 7.45315 5.83997 7.45315H14.2775C14.5689 7.45315 14.8048 7.68905 14.8048 7.98049C14.8048 8.27194 14.5689 8.50784 14.2775 8.50784Z"
+                    />
+                    <path
+                      d="M6.27644 2.10938C5.85414 2.10938 5.45659 2.27419 5.15791 2.57287L3.6665 4.06427C3.31491 4.41584 3.203 4.80895 3.203 5.27344H6.36707V2.10938H6.27644Z"
+                    />
+                  </g></svg
+                >История заказов
+              </li>
+            </ul>
+            <div class="lk-nav__title">
+              <span>Партнерам</span>
+            </div>
+            <ul>
+              <li data-open="bonus">
+                <svg viewBox="0 0 20 20">
+                  <g>
+                    <path
+                      d="M19.4987 7.30169L13.3248 6.40442L10.5643 0.810627C10.3674 0.410236 9.63262 0.410236 9.43574 0.810627L6.67558 6.40442L0.501308 7.30169C0.0208384 7.372 -0.169396 7.9638 0.177479 8.30091L4.64393 12.6553L3.58885 18.8037C3.5076 19.2776 4.00604 19.6479 4.43925 19.4213L10.0393 16.5186L15.5608 19.4213C15.9917 19.6479 16.4929 19.2776 16.4112 18.8037L15.3561 12.6553L19.823 8.30091C20.1694 7.9638 19.9792 7.372 19.4987 7.30169Z"
+                    />
+                  </g></svg
+                >Бонусы
+              </li>
+              <li data-open="partner">
+                <svg viewBox="0 0 20 20">
+                  <path
+                    d="M13.5547 4.6875H10.0391C9.7152 4.6875 9.45312 4.94957 9.45312 5.27344V17.6562H14.1406V5.27344C14.1406 4.94957 13.8786 4.6875 13.5547 4.6875Z"
+                  />
+                  <path
+                    d="M19.4141 8.20312H15.8984C15.5746 8.20312 15.3125 8.4652 15.3125 8.78906V17.6562H20V8.78906C20 8.4652 19.7379 8.20312 19.4141 8.20312Z"
+                  />
+                  <path
+                    d="M7.69531 0H4.17969C3.85582 0 3.59375 0.26207 3.59375 0.585938V17.6562H8.28125V0.585938C8.28125 0.26207 8.01918 0 7.69531 0Z"
+                  />
+                  <path
+                    d="M9.45312 18.8281C6.33832 18.8281 4.30113 18.8281 1.17188 18.8281V17.6562H1.75781C2.08168 17.6562 2.34375 17.3942 2.34375 17.0703C2.34375 16.7464 2.08168 16.4844 1.75781 16.4844H1.17188V14.0625H1.75781C2.08168 14.0625 2.34375 13.8004 2.34375 13.4766C2.34375 13.1527 2.08168 12.8906 1.75781 12.8906H1.17188V10.5469H1.75781C2.08168 10.5469 2.34375 10.2848 2.34375 9.96094C2.34375 9.63707 2.08168 9.375 1.75781 9.375H1.17188V7.03125H1.75781C2.08168 7.03125 2.34375 6.76918 2.34375 6.44531C2.34375 6.12145 2.08168 5.85938 1.75781 5.85938H1.17188V3.51562H1.75781C2.08168 3.51562 2.34375 3.25355 2.34375 2.92969C2.34375 2.60582 2.08168 2.34375 1.75781 2.34375H1.17188V0.585938C1.17188 0.26207 0.909805 0 0.585938 0C0.26207 0 0 0.26207 0 0.585938V19.4141C0 19.7379 0.26207 20 0.585938 20C7.73426 20 2.06824 20 19.4141 20C19.7379 20 20 19.7379 20 19.4141V18.8281C15.9918 18.8281 13.212 18.8281 9.45312 18.8281Z"
+                  /></svg
+                >Партнерские заказы
+              </li>
+            </ul>
+            <a href="#" class="lk-nav_logout">Выход из аккаунта</a>
+          </div>
+          <div class="lk-content" data-close="true">
+            <div class="lk-content-modal">
+              <div class="lk-content-modal__header">
+                <span class="title">Профиль</span>
+                <button class="close" data-close="true">
+                  <svg x="0px" y="0px" viewBox="0 0 30 30">
+                    <path
+                      d="M25,6.2L23.8,5L15,13.8L6.2,5L5,6.2l8.8,8.8L5,23.8L6.2,25l8.8-8.8l8.8,8.8l1.2-1.2L16.2,15L25,6.2z"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div class="lk-content-modal__body">
+                <div class="col-md-6">
+                  <form class="change-user" onsubmit="return false">
+                    <div class="form-group">
+                      <label for="surname-user">Фамилия*</label>
+                      <input id="surname-user" type="text" name="surname" autocomplete="surname" />
+                    </div>
+
+                    <div class="form-group">
+                      <label for="name-user">Имя*</label>
+                      <input id="name-user" type="text" name="name" autocomplete="name" />
+                    </div>
+
+                    <div class="form-group">
+                      <label for="patronymic-user">Очество:</label>
+                      <input id="patronymic-user" type="text" name="patronymic" autocomplete="patronymic" />
+                    </div>
+
+                    <div class="form-group">
+                      <label for="phone-user">Телефон*</label>
+                      <input
+                        id="phone-user"
+                        name="phone"
+                        autocomplete="phone"
+                        type="text"
+                        placeholder="+38 (0__) ___-__-__"
+                        data-mask="+38 (0__) ___-__-__"
+                      />
+                    </div>
+
+                    <div class="form-group">
+                      <label for="email-user">E-mail*</label>
+                      <input id="email-user" type="text" name="email" autocomplete="email" />
+                    </div>
+
+                    <button class="outline" type="send">Подтвердить</button>
+                  </form>
+                </div>
+
+                <div class="col-md-6">
+                  <form class="change-pass" onsubmit="return false">
+                    <div class="form-group">
+                      <label for="new-pass">Новый пароль</label>
+                      <input id="new-pass" type="text" name="new-password" autocomplete="surname" />
+                    </div>
+
+                    <div class="form-group">
+                      <label for="confirm-pass">Подтвердите пароль</label>
+                      <input id="confirm-pass" type="text" name="confirm-password" autocomplete="name" />
+                    </div>
+
+                    <button class="outline" type="send">Подтвердить</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Main end -->
+
+    <!-- Footer -->
+    <footer class="footer ptb bt">
+      <div class="container">
+        <div class="row ">
+          <div class="col-12 col-sm-6 ">
+            <svg viewBox="0 0 332 54.1" class="footer-logo">
+              <path
+                class="header-logo__path-1"
+                d="M12 11.1c-.4-.8-.5-1.7-.3-2.5s.7-1.5 1.5-2c.8-.4 1.7-.5 2.5-.3s1.5.7 2 1.5l11.9 20.7c.4.6.6 1.4.6 2.1 0 .7-.1 1.3-.4 1.9l-12.2 20c-.5.8-1.2 1.3-2 1.5-.8.2-1.6.1-2.4-.3-.8-.5-1.3-1.2-1.5-2-.2-.8-.1-1.6.3-2.4l9.7-15.9H3.3c-.9 0-1.7-.4-2.3-1-.6-.6-1-1.4-1-2.3 0-.9.4-1.7 1-2.3.6-.6 1.4-1 2.3-1H21l-9-15.7z"
+              ></path>
+              <path
+                class="header-logo__path-2"
+                fill="red"
+                d="M29.1 40.7c-.5-.8-.5-1.7-.3-2.5s.7-1.5 1.5-2 1.7-.5 2.5-.3 1.5.7 2 1.5l6.8 11.7c.5.8.5 1.7.3 2.5s-.7 1.5-1.5 2-1.7.5-2.5.3-1.5-.7-2-1.5l-6.8-11.7zm6.8-32.8c.5-.8 1.2-1.4 2-1.6.8-.2 1.6-.1 2.4.3l.1.1c.8.5 1.3 1.2 1.5 2 .2.8.1 1.7-.3 2.5L35.4 22c-.5.8-1.2 1.3-2 1.5-.8.2-1.6.1-2.4-.3h-.1c-.8-.5-1.3-1.2-1.5-2-.2-.8-.1-1.6.3-2.4v-.1l6.2-10.8zm.7 25.3c-.9 0-1.7-.4-2.3-1-.6-.6-1-1.4-1-2.3 0-.9.4-1.7 1-2.3.6-.6 1.4-1 2.3-1h13.8c.9 0 1.7.4 2.3 1 .6.6 1 1.4 1 2.3 0 .9-.4 1.7-1 2.3-.6.6-1.4 1-2.3 1H36.6z"
+              ></path>
+              <path
+                class="header-logo__path-3"
+                fill-rule="evenodd"
+                d="M83.8 16.3h11.1v-6c-3.5 0-10.4-.4-13.4.2-5.3 1.1-9.4 5.6-9.4 11.5 0 5.8 5 11.6 10.9 11.6h8.9c3 0 5.4 2.7 5.4 5.7 0 2.7-1.9 5-4.4 5.6-3 .7-16.4.1-20.4.1v5.8h19.9c6.4 0 11.6-5.2 11.7-11.6.1-5-3.9-11.6-9.2-11.6H83.7c-3.2.1-5.7-2.3-5.7-5.6 0-3.4 2.6-5.5 5.8-5.7zm235.2-5h-6.1V0H306v32.9c1.3 13 11.4 18.5 23.4 18.5h2.6v-6h-3.8c-7.3 0-13.8-4.9-15.2-12.1 0-.1 0-.3-.1-.4V17.5h6.1v-6.2zm-25 33.5c-3.8 4-9.1 6.6-15.1 6.6-11.4 0-20.6-9.2-20.6-20.6 0-11.4 9.2-20.6 20.6-20.6 11.4 0 20.6 9.2 20.6 20.6l.4 20.2H294v-6.2zm-14.8-28.4c7.8 0 14.1 6.3 14.1 14.1s-6.3 14.1-14.1 14.1-14.1-6.3-14.1-14.1 6.3-14.1 14.1-14.1zm-41.3 16.5V10.2H231v22.7c1.3 13 11.4 18.5 23.4 18.5h2.6v-6h-3.8c-7.3 0-13.8-4.9-15.2-12.1 0-.2 0-.3-.1-.4zm-32.1-4.2v22.7h-6.9V28.7c1.2-12.5 11-18.5 22.7-18.5h3.2v6H221c-7.3 0-13.8 4.9-15.2 12.1.1.2.1.3 0 .4zm-19.3 16.1c-3.8 4-9.1 6.6-15.1 6.6-11.4 0-20.6-9.2-20.6-20.6 0-11.4 9.2-20.6 20.6-20.6 11.4 0 20.6 9.2 20.6 20.6l.4 20.2h-5.9v-6.2zm-14.8-28.4c7.8 0 14.1 6.3 14.1 14.1s-6.3 14.1-14.1 14.1-14.1-6.3-14.1-14.1 6.3-14.1 14.1-14.1zm-43.2 16.3c9.6 2.6 11.7 9.1 11.7 18.4h6.8c0-11.1-1.7-20.5-14.7-23.9l11.8-16.9h-8.4l-11 16.1H117V10.2h-7.2v40.7h7.2V32.6c2 0 10.2-.3 11.5.1z"
+              ></path>
+            </svg>
+          </div>
+
+          <div class="col-12 col-sm-6 d-flex justify-content-sm-end flex-column flex-sm-row">
+            <nav class="footer-nav order-2 order-sm-0">
+              <ul class="footer-nav-list">
+                <li class="footer-nav__item">
+                  <a href="javascript:void(0)" class="footer-nav__link">
+                    Торшеры
+                  </a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="javascript:void(0)" class="footer-nav__link">Настенные</a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="javascript:void(0)" class="footer-nav__link">Трековые системы </a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="javascript:void(0)" class="footer-nav__link">Накладные </a>
+                </li>
+
+                <li class="footer-nav__item">
+                  <a href="javascript:void(0)" class="footer-nav__link">Подвесные </a>
+                </li>
+
+                <li class="footer-nav__item">
+                  <a href="javascript:void(0)" class="footer-nav__link">Встроенные </a>
+                </li>
+
+                <li class="footer-nav__item">
+                  <a href="javascript:void(0)" class="footer-nav__link">Магнитные системы </a>
+                </li>
+
+                <li class="footer-nav__item">
+                  <a href="javascript:void(0)" class="footer-nav__link">Светопроводящий камень </a>
+                </li>
+              </ul>
+            </nav>
+            <nav class="footer-nav order-1 order-sm-0">
+              <ul class="footer-nav-list">
+                <li class="footer-nav__item">
+                  <a href="javascript:void(0)" class="footer-nav__link">О нас</a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="javascript:void(0)" class="footer-nav__link">Оплата</a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="javascript:void(0)" class="footer-nav__link">Доставка</a>
+                </li>
+                <li class="footer-nav__item">
+                  <a href="javascript:void(0)" class="footer-nav__link">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Footer end -->
+    <div class="copyright">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="copyright-content">
+              <ul class="copyright-nav-list social">
+                <li class="copyright-nav__item">
+                  <a href="javascript:void(0)" class="copyright-nav__link facebook"></a>
+                </li>
+                <li class="copyright-nav__item">
+                  <a href="javascript:void(0)" class="copyright-nav__link twitter"></a>
+                </li>
+                <li class="copyright-nav__item">
+                  <a href="javascript:void(0)" class="copyright-nav__link linkedin"></a>
+                </li>
+                <li class="copyright-nav__item">
+                  <a href="javascript:void(0)" class="copyright-nav__link instargam"></a>
+                </li>
+                <li class="copyright-nav__item">
+                  <a href="javascript:void(0)" class="copyright-nav__link youtube"></a>
+                </li>
+              </ul>
+
+              <ul class="copyright-nav-list info">
+                <li class="copyright-nav__item">
+                  <div class="select language">
+                    <select>
+                      <option value="0" data-url="/ru" data-icon="ru" disabled>ru</option>
+                      <option value="1" data-url="/ru" data-icon="ru">ru</option>
+                      <option value="2" data-url="/ua" data-icon="ua">ua</option>
+                    </select>
+                  </div>
+                </li>
+                <li class="copyright-nav__item">
+                  <a href="javascript:void(0)" class="copyright-nav__link">
+                    О нас
+                  </a>
+                </li>
+                <li class="copyright-nav__item">
+                  <a href="javascript:void(0)" class="copyright-nav__link">
+                    Статьи
+                  </a>
+                </li>
+                <li class="copyright-nav__item">
+                  <a href="javascript:void(0)" class="copyright-nav__link">
+                    Доставка
+                  </a>
+                </li>
+                <li class="copyright-nav__item">
+                  <a href="javascript:void(0)" class="copyright-nav__link">
+                    Оплата
+                  </a>
+                </li>
+                <li class="copyright-nav__item">
+                  <a href="javascript:void(0)" class="copyright-nav__link">
+                    Контакты
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/bundle.js"></script>
+  </body>
+</html>
