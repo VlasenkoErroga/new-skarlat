@@ -546,7 +546,12 @@
                 </div>
               </div>
             </div>
-            <img src="./img/main-slider/1.jpg" alt="" />
+            <picture>
+              <source media="(max-width: 575px)" srcset="../img/main-slider/1-400.jpg" />
+              <source media="(max-width: 768px)" srcset="../img/main-slider/1-500.jpg" />
+              <source media="(max-width: 992px)" srcset="../img/main-slider/1-600.jpg" />
+              <img src="../img/main-slider/1.jpg" alt="Important slider" />
+            </picture>
           </div>
           <div class="main-slider__item">
             <div class="main-slider__content">
