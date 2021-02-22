@@ -724,7 +724,7 @@
                 </div>
               </div>
             </div>
-            <div class="lk-content-modal" data-show="delivery">
+            <div class="lk-content-modal" data-show="delivery" id="user-delivery">
               <div class="lk-content-modal__header">
                 <span class="title">Доставка</span>
                 <button class="close" data-close="true">
@@ -750,67 +750,96 @@
                       />
                     </div>
 
-                    <div class="form-check">
-                      <input
-                        class="form-check-input radio"
-                        type="radio"
-                        name="exampleRadios"
-                        id="exampleRadios1"
-                        value="option1"
-                      />
-                      <label class="form-check-label" for="exampleRadios1">
-                        Адресная доставка
-                      </label>
-                    </div>
-                    <div class="form-group">
-                      <label for="street-curier">Улица:</label>
-                      <input
-                        id="street-curier"
-                        type="text"
-                        placeholder="Киевская"
-                        name="street-curier"
-                        autocomplete="street-curier"
-                        required="required"
-                      />
-                    </div>
-
-                    <div class="form-group-row">
-                      <div class="form-group">
-                        <label for="street-curier">Номер дома:</label>
-                        <input type="text" placeholder="19" name="house" autocomplete="house" required="" />
+                    <div class="deliv-item">
+                      <div class="form-check deliv-type">
+                        <input class="checkbox" type="checkbox" name="curier" id="curier" data-delivtype="curier" />
+                        <label class="form-check-label" for="curier">
+                          Адресная доставка
+                        </label>
                       </div>
 
-                      <div class="form-group">
-                        <label for="street-curier">Номер квартиры:</label>
-                        <input type="text" placeholder="98" name="build" autocomplete="build" required="" />
+                      <div class="deliv-settings">
+                        <div class="form-group">
+                          <label for="curier-street">Улица:</label>
+                          <input
+                            id="curier-street"
+                            type="text"
+                            placeholder="Киевская"
+                            name="curier-street"
+                            autocomplete="curier-street"
+                            required="required"
+                            disabled
+                          />
+                        </div>
+
+                        <div class="form-group-row">
+                          <div class="form-group">
+                            <label for="curier-house">Номер дома:</label>
+                            <input
+                              type="text"
+                              placeholder="19"
+                              name="curier-house"
+                              autocomplete="curier-house"
+                              required="required"
+                              disabled
+                            />
+                          </div>
+
+                          <div class="form-group">
+                            <label for="curier-house-numb" disabled>Номер квартиры:</label>
+                            <input
+                              type="text"
+                              placeholder="98"
+                              name="curier-house-numb"
+                              autocomplete="curier-house-numb"
+                              required="required"
+                              disabled
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="deliv-about">
+                        <p>Адресна доставка, Новая Почта</p>
+                        <ul>
+                          <li>Курьер доставит Вашу посылку в течении 1-3 дней.</li>
+                          <li>Оплата наличными.</li>
+                          <li>Стоимость адресной доставки по тарифам перевозчика Новая Почта.</li>
+                        </ul>
                       </div>
                     </div>
-                    <div class="form-check">
-                      <input
-                        class="form-check-input radio"
-                        type="radio"
-                        name="exampleRadios"
-                        id="exampleRadios2"
-                        value="option2"
-                        checked
-                      />
-                      <label class="form-check-label" for="exampleRadios2">
-                        В отделение, Новая почта
-                      </label>
+
+                    <div class="deliv-item">
+                      <div class="form-check deliv-type">
+                        <input class="checkbox" type="checkbox" name="novaposhta" id="np" data-delivtype="np" />
+                        <label class="form-check-label" for="np">
+                          В отделение, Новая почта
+                        </label>
+                      </div>
+
+                      <div class="deliv-settings">
+                        <div class="form-group">
+                          <label for="department">Отделение:</label>
+                          <input
+                            id="department"
+                            type="text"
+                            placeholder="Выберите отделение"
+                            name="department"
+                            autocomplete="department"
+                            required="required"
+                            disabled
+                          />
+                        </div>
+                      </div>
+                      <div class="deliv-about">
+                        <p>Адресна доставка, Новая Почта</p>
+                        <ul>
+                          <li>Срок доставки - 1-3 дня.</li>
+                          <li>Стоимость доставки в отделение по тарифам перевозчика Новая Почта.</li>
+                        </ul>
+                      </div>
                     </div>
-                    <div class="form-check">
-                      <input
-                        class="form-check-input radio"
-                        type="radio"
-                        name="exampleRadios"
-                        id="exampleRadios3"
-                        value="option3"
-                        checked
-                      />
-                      <label class="form-check-label" for="exampleRadios3">
-                        Самовывоз
-                      </label>
-                    </div>
+
+                    <button class="outline">Подтвердить</button>
                   </form>
                 </div>
               </div>
@@ -829,19 +858,15 @@
               </div>
               <div class="lk-content-modal__body">
                 <div class="col-12">
-                  <h2 class="collapse collapse-question">
-                    Есть ли возможность заказать товар с доставкой в другую страну?
-                  </h2>
+                  <h2 class="collapse-question">Есть ли возможность заказать товар с доставкой в другую страну?</h2>
                   <div class="collapse-content-question">
                     <p>К сожалению, в данный момент, мы работаем только на территории Украины.</p>
                   </div>
-                  <h2 class="collapse collapse-question">Сколько дней товар находится в пункте выдачи?</h2>
+                  <h2 class="collapse-question">Сколько дней товар находится в пункте выдачи?</h2>
                   <div class="collapse-content-question">
                     <p>К сожалению, в данный момент, мы работаем только на территории Украины.</p>
                   </div>
-                  <h2 class="collapse collapse-question">
-                    Есть ли возможность отказаться от части заказа в пункте выдачи?
-                  </h2>
+                  <h2 class="collapse-question">Есть ли возможность отказаться от части заказа в пункте выдачи?</h2>
                   <div class="collapse-content-question">
                     <p>К сожалению, в данный момент, мы работаем только на территории Украины.</p>
                   </div>
@@ -862,14 +887,14 @@
               </div>
               <div class="lk-content-modal__body">
                 <div class="col-12">
-                  <div class="new-order">
-                    <div class="new-order__item">
+                  <div class="order">
+                    <div class="order__item">
                       <div class="collapse status-canceled">
                         <div class="short-info">
                           <small>№545 от 06.11.2020</small>
                           <span>Отменённый заказ</span>
                         </div>
-                        <div class="new-order__cost">
+                        <div class="order__cost">
                           <span>14 500</span>
                           <span>грн</span>
                         </div>
@@ -887,14 +912,6 @@
                           </ul>
                         </div>
                         <div class="product-list">
-                          <div class="title-column">
-                            <div class="coll-count">
-                              К-ство
-                            </div>
-                            <div class="coll-price">
-                              Цена
-                            </div>
-                          </div>
                           <div class="product-item">
                             <div class="product-item__info">
                               <div class="product-item__img">
@@ -905,43 +922,98 @@
                                 <span>Skarlat RWLB109 7W BK+WH 4000K</span>
                               </div>
                             </div>
-                            <div class="product-item__count">
-                              1x
+                            <div class="product-item__order">
+                              <div class="coll">
+                                <div class="title">
+                                  К-ство
+                                </div>
+                                <div class="product-item__count">
+                                  1x
+                                </div>
+                              </div>
+                              <div class="coll">
+                                <div class="title">
+                                  Цена
+                                </div>
+                                <div class="product-item__price">4500<span>грн</span></div>
+                              </div>
                             </div>
-                            <div class="product-item__price">
-                              4500 грн
+                          </div>
+
+                          <div class="product-item">
+                            <div class="product-item__info">
+                              <div class="product-item__img">
+                                <img src="./img/product/1.jpg" alt="" />
+                              </div>
+                              <div class="product-item__name">
+                                <p>Подвесной светильник</p>
+                                <span>Skarlat RWLB109 7W BK+WH 4000K</span>
+                              </div>
+                            </div>
+                            <div class="product-item__order">
+                              <div class="coll">
+                                <div class="title">
+                                  К-ство
+                                </div>
+                                <div class="product-item__count">
+                                  1x
+                                </div>
+                              </div>
+                              <div class="coll">
+                                <div class="title">
+                                  Цена
+                                </div>
+                                <div class="product-item__price">4500<span>грн</span></div>
+                              </div>
                             </div>
                           </div>
                         </div>
-                        <ul class="new-order-total-list">
-                          <li class="new-order-total__item">
-                            <div class="new-order-total__item-title">Оплата</div>
-                            <div class="new-order-total__value">Картой на сайте</div>
+                        <ul class="order-total-list">
+                          <li class="order-total__item">
+                            <div class="order-total__item-title">Оплата</div>
+                            <div class="order-total__value">Картой на сайте</div>
                           </li>
-                          <li class="new-order-total__item">
-                            <div class="new-order-total__item-title">Доставка</div>
-                            <div class="new-order-total__value">Новая Почта</div>
+                          <li class="order-total__item">
+                            <div class="order-total__item-title">Доставка</div>
+                            <div class="order-total__value">Новая Почта</div>
                           </li>
-                          <li class="new-order-total__item">
-                            <div class="new-order-total__item-title">Итого</div>
-                            <div class="new-order-total__value cost">3 600 грн</div>
+                          <li class="order-total__item">
+                            <div class="order-total__item-title">Итого</div>
+                            <div class="order-total__value cost">3 600<span>грн</span></div>
                           </li>
                         </ul>
-                        <div class="new-order__control">
+                        <div class="order__control">
                           <button class="primary">Оплатить</button>
                           <button class="outline">Отменить</button>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="new-order">
-                    <div class="new-order__item">
-                      <div class="collapse status-new">
+                </div>
+              </div>
+            </div>
+
+            <div class="lk-content-modal" data-show="history">
+              <div class="lk-content-modal__header">
+                <span class="title">История заказов</span>
+                <button class="close" data-close="true">
+                  <svg x="0px" y="0px" viewBox="0 0 30 30">
+                    <path
+                      d="M25,6.2L23.8,5L15,13.8L6.2,5L5,6.2l8.8,8.8L5,23.8L6.2,25l8.8-8.8l8.8,8.8l1.2-1.2L16.2,15L25,6.2z"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div class="lk-content-modal__body">
+                <div class="col-12">
+                  <div class="order">
+                    <div class="order__item">
+                      <div class="collapse status-canceled">
                         <div class="short-info">
                           <small>№545 от 06.11.2020</small>
-                          <span>Новый заказ</span>
+                          <span>Отменённый заказ</span>
                         </div>
-                        <div class="new-order__cost">
+                        <div class="order__cost">
                           <span>14 500</span>
                           <span>грн</span>
                         </div>
@@ -969,29 +1041,98 @@
                                 <span>Skarlat RWLB109 7W BK+WH 4000K</span>
                               </div>
                             </div>
-                            <div class="product-item__count">
-                              1x
+                            <div class="product-item__order">
+                              <div class="coll">
+                                <div class="title">
+                                  К-ство
+                                </div>
+                                <div class="product-item__count">
+                                  1x
+                                </div>
+                              </div>
+                              <div class="coll">
+                                <div class="title">
+                                  Цена
+                                </div>
+                                <div class="product-item__price">4500<span>грн</span></div>
+                              </div>
                             </div>
-                            <div class="product-item__price">
-                              4500
+                          </div>
+
+                          <div class="product-item">
+                            <div class="product-item__info">
+                              <div class="product-item__img">
+                                <img src="./img/product/1.jpg" alt="" />
+                              </div>
+                              <div class="product-item__name">
+                                <p>Подвесной светильник</p>
+                                <span>Skarlat RWLB109 7W BK+WH 4000K</span>
+                              </div>
+                            </div>
+                            <div class="product-item__order">
+                              <div class="coll">
+                                <div class="title">
+                                  К-ство
+                                </div>
+                                <div class="product-item__count">
+                                  1x
+                                </div>
+                              </div>
+                              <div class="coll">
+                                <div class="title">
+                                  Цена
+                                </div>
+                                <div class="product-item__price">4500<span>грн</span></div>
+                              </div>
                             </div>
                           </div>
                         </div>
-                        <div class="new-order__control">
+                        <ul class="order-total-list">
+                          <li class="order-total__item">
+                            <div class="order-total__item-title">Оплата</div>
+                            <div class="order-total__value">Картой на сайте</div>
+                          </li>
+                          <li class="order-total__item">
+                            <div class="order-total__item-title">Доставка</div>
+                            <div class="order-total__value">Новая Почта</div>
+                          </li>
+                          <li class="order-total__item">
+                            <div class="order-total__item-title">Итого</div>
+                            <div class="order-total__value cost">3 600<span>грн</span></div>
+                          </li>
+                        </ul>
+                        <div class="order__control">
                           <button class="primary">Оплатить</button>
                           <button class="outline">Отменить</button>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="new-order">
-                    <div class="new-order__item">
-                      <div class="collapse status-processing">
+                </div>
+              </div>
+            </div>
+
+            <div class="lk-content-modal" data-show="partner">
+              <div class="lk-content-modal__header">
+                <span class="title">Партнерские заказы</span>
+                <button class="close" data-close="true">
+                  <svg x="0px" y="0px" viewBox="0 0 30 30">
+                    <path
+                      d="M25,6.2L23.8,5L15,13.8L6.2,5L5,6.2l8.8,8.8L5,23.8L6.2,25l8.8-8.8l8.8,8.8l1.2-1.2L16.2,15L25,6.2z"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div class="lk-content-modal__body">
+                <div class="col-12">
+                  <div class="order">
+                    <div class="order__item">
+                      <div class="collapse status-canceled">
                         <div class="short-info">
                           <small>№545 от 06.11.2020</small>
-                          <span>В обработке</span>
+                          <span>Отменённый заказ</span>
                         </div>
-                        <div class="new-order__cost">
+                        <div class="order__cost">
                           <span>14 500</span>
                           <span>грн</span>
                         </div>
@@ -1019,29 +1160,81 @@
                                 <span>Skarlat RWLB109 7W BK+WH 4000K</span>
                               </div>
                             </div>
-                            <div class="product-item__count">
-                              1x
+                            <div class="product-item__order">
+                              <div class="coll">
+                                <div class="title">
+                                  К-ство
+                                </div>
+                                <div class="product-item__count">
+                                  1x
+                                </div>
+                              </div>
+                              <div class="coll">
+                                <div class="title">
+                                  Цена
+                                </div>
+                                <div class="product-item__price">4500<span>грн</span></div>
+                              </div>
                             </div>
-                            <div class="product-item__price">
-                              4500
+                          </div>
+
+                          <div class="product-item">
+                            <div class="product-item__info">
+                              <div class="product-item__img">
+                                <img src="./img/product/1.jpg" alt="" />
+                              </div>
+                              <div class="product-item__name">
+                                <p>Подвесной светильник</p>
+                                <span>Skarlat RWLB109 7W BK+WH 4000K</span>
+                              </div>
+                            </div>
+                            <div class="product-item__order">
+                              <div class="coll">
+                                <div class="title">
+                                  К-ство
+                                </div>
+                                <div class="product-item__count">
+                                  1x
+                                </div>
+                              </div>
+                              <div class="coll">
+                                <div class="title">
+                                  Цена
+                                </div>
+                                <div class="product-item__price">4500<span>грн</span></div>
+                              </div>
                             </div>
                           </div>
                         </div>
-                        <div class="new-order__control">
+                        <ul class="order-total-list">
+                          <li class="order-total__item">
+                            <div class="order-total__item-title">Оплата</div>
+                            <div class="order-total__value">Картой на сайте</div>
+                          </li>
+                          <li class="order-total__item">
+                            <div class="order-total__item-title">Доставка</div>
+                            <div class="order-total__value">Новая Почта</div>
+                          </li>
+                          <li class="order-total__item">
+                            <div class="order-total__item-title">Итого</div>
+                            <div class="order-total__value cost">3 600<span>грн</span></div>
+                          </li>
+                        </ul>
+                        <div class="order__control">
                           <button class="primary">Оплатить</button>
                           <button class="outline">Отменить</button>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="new-order">
-                    <div class="new-order__item">
-                      <div class="collapse status-forming">
+                  <div class="order">
+                    <div class="order__item">
+                      <div class="collapse status-canceled">
                         <div class="short-info">
                           <small>№545 от 06.11.2020</small>
-                          <span>Формируется к отправке</span>
+                          <span>Отменённый заказ</span>
                         </div>
-                        <div class="new-order__cost">
+                        <div class="order__cost">
                           <span>14 500</span>
                           <span>грн</span>
                         </div>
@@ -1069,29 +1262,81 @@
                                 <span>Skarlat RWLB109 7W BK+WH 4000K</span>
                               </div>
                             </div>
-                            <div class="product-item__count">
-                              1x
+                            <div class="product-item__order">
+                              <div class="coll">
+                                <div class="title">
+                                  К-ство
+                                </div>
+                                <div class="product-item__count">
+                                  1x
+                                </div>
+                              </div>
+                              <div class="coll">
+                                <div class="title">
+                                  Цена
+                                </div>
+                                <div class="product-item__price">4500<span>грн</span></div>
+                              </div>
                             </div>
-                            <div class="product-item__price">
-                              4500
+                          </div>
+
+                          <div class="product-item">
+                            <div class="product-item__info">
+                              <div class="product-item__img">
+                                <img src="./img/product/1.jpg" alt="" />
+                              </div>
+                              <div class="product-item__name">
+                                <p>Подвесной светильник</p>
+                                <span>Skarlat RWLB109 7W BK+WH 4000K</span>
+                              </div>
+                            </div>
+                            <div class="product-item__order">
+                              <div class="coll">
+                                <div class="title">
+                                  К-ство
+                                </div>
+                                <div class="product-item__count">
+                                  1x
+                                </div>
+                              </div>
+                              <div class="coll">
+                                <div class="title">
+                                  Цена
+                                </div>
+                                <div class="product-item__price">4500<span>грн</span></div>
+                              </div>
                             </div>
                           </div>
                         </div>
-                        <div class="new-order__control">
+                        <ul class="order-total-list">
+                          <li class="order-total__item">
+                            <div class="order-total__item-title">Оплата</div>
+                            <div class="order-total__value">Картой на сайте</div>
+                          </li>
+                          <li class="order-total__item">
+                            <div class="order-total__item-title">Доставка</div>
+                            <div class="order-total__value">Новая Почта</div>
+                          </li>
+                          <li class="order-total__item">
+                            <div class="order-total__item-title">Итого</div>
+                            <div class="order-total__value cost">3 600<span>грн</span></div>
+                          </li>
+                        </ul>
+                        <div class="order__control">
                           <button class="primary">Оплатить</button>
                           <button class="outline">Отменить</button>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="new-order">
-                    <div class="new-order__item">
-                      <div class="collapse status-send">
+                  <div class="order">
+                    <div class="order__item">
+                      <div class="collapse status-canceled">
                         <div class="short-info">
                           <small>№545 от 06.11.2020</small>
-                          <span>Отправлен</span>
+                          <span>Отменённый заказ</span>
                         </div>
-                        <div class="new-order__cost">
+                        <div class="order__cost">
                           <span>14 500</span>
                           <span>грн</span>
                         </div>
@@ -1119,29 +1364,81 @@
                                 <span>Skarlat RWLB109 7W BK+WH 4000K</span>
                               </div>
                             </div>
-                            <div class="product-item__count">
-                              1x
+                            <div class="product-item__order">
+                              <div class="coll">
+                                <div class="title">
+                                  К-ство
+                                </div>
+                                <div class="product-item__count">
+                                  1x
+                                </div>
+                              </div>
+                              <div class="coll">
+                                <div class="title">
+                                  Цена
+                                </div>
+                                <div class="product-item__price">4500<span>грн</span></div>
+                              </div>
                             </div>
-                            <div class="product-item__price">
-                              4500
+                          </div>
+
+                          <div class="product-item">
+                            <div class="product-item__info">
+                              <div class="product-item__img">
+                                <img src="./img/product/1.jpg" alt="" />
+                              </div>
+                              <div class="product-item__name">
+                                <p>Подвесной светильник</p>
+                                <span>Skarlat RWLB109 7W BK+WH 4000K</span>
+                              </div>
+                            </div>
+                            <div class="product-item__order">
+                              <div class="coll">
+                                <div class="title">
+                                  К-ство
+                                </div>
+                                <div class="product-item__count">
+                                  1x
+                                </div>
+                              </div>
+                              <div class="coll">
+                                <div class="title">
+                                  Цена
+                                </div>
+                                <div class="product-item__price">4500<span>грн</span></div>
+                              </div>
                             </div>
                           </div>
                         </div>
-                        <div class="new-order__control">
+                        <ul class="order-total-list">
+                          <li class="order-total__item">
+                            <div class="order-total__item-title">Оплата</div>
+                            <div class="order-total__value">Картой на сайте</div>
+                          </li>
+                          <li class="order-total__item">
+                            <div class="order-total__item-title">Доставка</div>
+                            <div class="order-total__value">Новая Почта</div>
+                          </li>
+                          <li class="order-total__item">
+                            <div class="order-total__item-title">Итого</div>
+                            <div class="order-total__value cost">3 600<span>грн</span></div>
+                          </li>
+                        </ul>
+                        <div class="order__control">
                           <button class="primary">Оплатить</button>
                           <button class="outline">Отменить</button>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="new-order">
-                    <div class="new-order__item">
-                      <div class="collapse status-not-available">
+                  <div class="order">
+                    <div class="order__item">
+                      <div class="collapse status-canceled">
                         <div class="short-info">
                           <small>№545 от 06.11.2020</small>
-                          <span>Нет в наличии</span>
+                          <span>Отменённый заказ</span>
                         </div>
-                        <div class="new-order__cost">
+                        <div class="order__cost">
                           <span>14 500</span>
                           <span>грн</span>
                         </div>
@@ -1169,17 +1466,137 @@
                                 <span>Skarlat RWLB109 7W BK+WH 4000K</span>
                               </div>
                             </div>
-                            <div class="product-item__count">
-                              1x
+                            <div class="product-item__order">
+                              <div class="coll">
+                                <div class="title">
+                                  К-ство
+                                </div>
+                                <div class="product-item__count">
+                                  1x
+                                </div>
+                              </div>
+                              <div class="coll">
+                                <div class="title">
+                                  Цена
+                                </div>
+                                <div class="product-item__price">4500<span>грн</span></div>
+                              </div>
                             </div>
-                            <div class="product-item__price">
-                              4500
+                          </div>
+
+                          <div class="product-item">
+                            <div class="product-item__info">
+                              <div class="product-item__img">
+                                <img src="./img/product/1.jpg" alt="" />
+                              </div>
+                              <div class="product-item__name">
+                                <p>Подвесной светильник</p>
+                                <span>Skarlat RWLB109 7W BK+WH 4000K</span>
+                              </div>
+                            </div>
+                            <div class="product-item__order">
+                              <div class="coll">
+                                <div class="title">
+                                  К-ство
+                                </div>
+                                <div class="product-item__count">
+                                  1x
+                                </div>
+                              </div>
+                              <div class="coll">
+                                <div class="title">
+                                  Цена
+                                </div>
+                                <div class="product-item__price">4500<span>грн</span></div>
+                              </div>
                             </div>
                           </div>
                         </div>
-                        <div class="new-order__control">
+                        <ul class="order-total-list">
+                          <li class="order-total__item">
+                            <div class="order-total__item-title">Оплата</div>
+                            <div class="order-total__value">Картой на сайте</div>
+                          </li>
+                          <li class="order-total__item">
+                            <div class="order-total__item-title">Доставка</div>
+                            <div class="order-total__value">Новая Почта</div>
+                          </li>
+                          <li class="order-total__item">
+                            <div class="order-total__item-title">Итого</div>
+                            <div class="order-total__value cost">3 600<span>грн</span></div>
+                          </li>
+                        </ul>
+                        <div class="order__control">
                           <button class="primary">Оплатить</button>
                           <button class="outline">Отменить</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="lk-content-modal" data-show="bonus">
+              <div class="lk-content-modal__header">
+                <span class="title">Бонусы</span>
+                <button class="close" data-close="true">
+                  <svg x="0px" y="0px" viewBox="0 0 30 30">
+                    <path
+                      d="M25,6.2L23.8,5L15,13.8L6.2,5L5,6.2l8.8,8.8L5,23.8L6.2,25l8.8-8.8l8.8,8.8l1.2-1.2L16.2,15L25,6.2z"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div class="lk-content-modal__body">
+                <div class="col-12">
+                  <ul class="bonus-info-list">
+                    <li>
+                      Доступно бонусов:<span>687</span
+                      ><button class="modal-info__icon" data-info="withdrawal">запрос на вывод</button>
+                    </li>
+                    <li>Промокод для клиента:<span>AA8878XX</span></li>
+                  </ul>
+                  <div class="bonus-list">
+                    <div class="bonus-list__title">История начислений и списаний:</div>
+                    <div class="bonus-wrap">
+                      <div class="bonus-item">
+                        <div class="bonus-status bonus-status-new"></div>
+                        <div class="bonus-item__header">
+                          <small>Сумма</small>
+                          <small>Баланс</small>
+                        </div>
+                        <div class="bonus-item__body">
+                          <div class="bonus-short-info">
+                            <small>№1 от 28.01.2021</small>
+                            <span>Начисление</span>
+                          </div>
+                          <div class="bonus__operation">
+                            <span>+ 500</span>
+                          </div>
+                          <div class="bonus__balance">
+                            <span>788</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="bonus-wrap">
+                      <div class="bonus-item">
+                        <div class="bonus-status bonus-status-canceled"></div>
+                        <div class="bonus-item__header">
+                          <small>Сумма</small>
+                          <small>Баланс</small>
+                        </div>
+                        <div class="bonus-item__body">
+                          <div class="bonus-short-info">
+                            <small>№1 от 28.01.2021</small>
+                            <span>Списание</span>
+                          </div>
+                          <div class="bonus__operation">
+                            <span>- 500</span>
+                          </div>
+                          <div class="bonus__balance">
+                            <span>788</span>
+                          </div>
                         </div>
                       </div>
                     </div>
